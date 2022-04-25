@@ -25,7 +25,7 @@ const Links = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
+    p{
         text-decoration: none;
         font-family: 'Roboto Condensed', sans-serif;
         color: #fff;
@@ -60,10 +60,10 @@ function Nav() {
         <Logo>BLU</Logo>
 
         <Links>
-            <a href='#'>HOME</a>
-            <a href='#'>ABOUT US</a>
-            <a href='#'>SERVICES</a>
-            <a href='#'>CONTACT</a>
+            <p>HOME</p>
+            <p>ABOUT US</p>
+            <p>SERVICES</p>
+            <p>CONTACT</p>
         </Links>
 
         <Toggle>
