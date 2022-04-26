@@ -1,6 +1,5 @@
 import React from 'react'
 import CarouselComponent from './CarouselComponent'
-import Nav from './Nav'
 import styled from 'styled-components'
 import Accord from './Accord'
 import {IoMdContacts} from 'react-icons/io'
@@ -293,7 +292,6 @@ function Home() {
     const [modalShow2, setModalShow2] = React.useState(false);
   return (
     <div>
-        <Nav/>
         <CarouselComponent/>
         <SecondSEction>
             <div className="left">
@@ -307,7 +305,8 @@ function Home() {
             </div>
 
             <Accord/>
-        </SecondSEction><ThirdSEction>
+        </SecondSEction>
+        <ThirdSEction>
             <div className="card">
                 <div className="top">
                     <IoMdContacts size='3rem'/>

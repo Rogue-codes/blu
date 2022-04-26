@@ -1,4 +1,5 @@
-import React from 'react'
+import {useState} from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Navbar = styled.nav`
@@ -10,7 +11,8 @@ const Navbar = styled.nav`
     padding: 2%;
     align-items: center;
     position: sticky;
-    background: #0680bcc2;
+    background: ${props => props.bgc};
+    transition: all .5s linear;
     top: 0;
     bottom: 0;
     z-index: 5;
@@ -25,7 +27,7 @@ const Links = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p{
+    a{
         text-decoration: none;
         font-family: 'Roboto Condensed', sans-serif;
         color: #fff;
@@ -55,15 +57,26 @@ const Toggle = styled.div`
 `
 
 function Nav() {
+    const [bg, setBg] = useState(false)
+
+    const changeBg = () => {
+        if(window.scrollY >= 250){
+            setBg(true)
+        }else{
+            setBg(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBg)
   return (
-    <Navbar>
+    <Navbar bgc={ bg ? '#0680bcc2' : 'transparent'}>
         <Logo>BLU</Logo>
 
         <Links>
-            <p>HOME</p>
-            <p>ABOUT US</p>
-            <p>SERVICES</p>
-            <p>CONTACT</p>
+            <Link to='/'>HOME</Link>
+            <Link to='/about'>ABOUT US</Link>
+            <Link to='/service'>SERVICES</Link>
+            <Link to='/contact'>CONTACT</Link>
         </Links>
 
         <Toggle>
