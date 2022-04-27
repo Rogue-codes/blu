@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Accordion from 'react-bootstrap/Accordion'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 
 
 
 function Accord() {
+  useEffect(()=>{
+    Aos.init({duration : 1000})
+  },[])
   return (
-<Accordion  defaultActiveKey="0" flush className='accd'>
-  <Accordion.Item eventKey="0">
+<Accordion defaultActiveKey="0" flush className='accd' data-aos="fade-left">
+  <Accordion.Item eventKey="0" className='aic'>
     <Accordion.Header>Dedicated Team</Accordion.Header>
     <Accordion.Body className='bod'>
         In Every IT environment, availability is a very important factor. 

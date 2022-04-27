@@ -46,18 +46,24 @@ const Toggle = styled.div`
     align-items: center;
     justify-content: space-around;
     .btn{
+
+    }
+`
+const Btn = styled.button`
         height: 20px;
         width: 20px;
         border-radius: 50%;
+        border: none;
         padding: 2%;
-        background-color: #999;
+        left: ${props => props.ps}px;
         position: absolute;
-        left: 25px;
-    }
+        transition: all .5s linear;
+        background: #067fbc;
 `
 
-function Nav() {
+function Nav({toggleDarkMode,darkMode}) {
     const [bg, setBg] = useState(false)
+
 
     const changeBg = () => {
         if(window.scrollY >= 250){
@@ -81,7 +87,7 @@ function Nav() {
 
         <Toggle>
             <img src="sun.png" height='15' width='15' alt="" srcset="" />
-            <div className="btn"></div>
+            <Btn ps={ darkMode ? '25' : '0'} onClick={toggleDarkMode}></Btn>
             <img src="moon.png" height='15' width='15' alt="" srcset="" />
         </Toggle>
     </Navbar>

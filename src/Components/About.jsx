@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import bg from '../Assets/abt.jpg'
 import abtbg from '../Assets/abtbg.png'
 import cld from '../Assets/cld.jpg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const First = styled.div`
     margin-top: -7%;
@@ -19,9 +21,6 @@ const First = styled.div`
     padding: 5%;
 `
 const Card = styled.div`
-    background: #0680bcc2;
-    border-radius: 5px;
-    box-shadow: rgba(63, 38, 38, 0.35) 0px 5px 15px;
     height: 50vh;
     width: 60%;
     padding: 2%;
@@ -30,7 +29,7 @@ const Card = styled.div`
     justify-content: center;
     align-items: flex-start;
     h1{
-        font-size: 4vw;
+        font-size: 6vw;
         color: #fff;
     }
 `
@@ -49,36 +48,7 @@ const SecondSEction = styled.section`
         border: 11px solid #000;
     }
     .left{
-        @media (max-width:450px) {
-            margin-top: 0%;
-            width: 100%;
-            flex-direction: column;
-            height: auto;
-            border: 11px solid #000;
-        }
-        width: 50%;
-        height: 60vh;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5%;
-        align-items: flex-start;
-        padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        font-family: 'Raleway', sans-serif;
-        color: #020008;
-        h1{
-            font-size: 3vw;
-            font-weight: 800;
-        }
-        p{
-            line-height: 30px;
-            text-align: justify;
-            font-size: 1.2vw;
-            color: #020008;
-            font-weight: 500;
-        }
+       
     }
     .right{
         width: 50%;
@@ -106,7 +76,7 @@ const ThirdSection = styled.div`
 const Banner = styled.div`
     width: 40%;
     height: 55%;
-    background: #fff;
+    background: ${props => props.bg};
     padding: 2%;
     h1{
         font-size: 2vw;
@@ -116,16 +86,50 @@ const Banner = styled.div`
         font-size: 1.2vw;
     }
 `
-function About() {
+const Left = styled.div`
+    color:${props => props.cl};   
+ @media (max-width:450px) {
+            margin-top: 0%;
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+            border: 11px solid #000;
+        }
+        width: 50%;
+        height: 60vh;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        align-items: flex-start;
+        padding: 2%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        font-family: 'Raleway', sans-serif;
+        h1{
+            font-size: 3vw;
+            font-weight: 800;
+        }
+        p{
+            line-height: 30px;
+            text-align: justify;
+            font-size: 1.2vw;
+            font-weight: 500;
+        }
+`
+function About({darkMode}) {
+    useEffect(()=>{
+        Aos.init({duration : 3000})
+    },[])
   return (
     <div>
         <First>
-            <Card>
+            <Card data-aos="fade-left">
                 <h1>ABOUT US</h1>
             </Card>
         </First>
-        <SecondSEction>
-            <div className="left">
+        <SecondSEction cl={darkMode ? '#fff' : '#000'}>
+            <Left data-aos="fade-right" className="left" cl={darkMode ? '#fff' : '#020008'}>
                 <h1>
                     Goal Principle
                 </h1>
@@ -133,13 +137,14 @@ function About() {
                 <p>Information Technology has advanced consistently since the birth of the analog computer, from filling rooms to the comfort of small easy to use devices that have populated the market across the world. Bluebird CMAST believes in this approach which technology has shown us, to provide advanced solutions that give comfort and ease to the clients but most especially addresses the problem with an accurate and efficient solution.</p>
 
                 
-            </div>
+            </Left>
 
-            <div className="right"></div>
+            <div className="right" data-aos="fade-left"></div>
         </SecondSEction>
 
         <ThirdSection>
-            <Banner>
+            <Banner data-aos="fade-up"
+     data-aos-duration="3000" bg={darkMode ? '#000' : '#fff'}>
                 <h1>Our History</h1>
                 <p>BlueBird Cmast Nig, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
             </Banner>

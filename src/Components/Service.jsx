@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import servbg from '../Assets/servbg.webp'
 import serv from '../Assets/serv.jpg'
 import serv2 from '../Assets/serv2.jpg'
 import serv3 from '../Assets/serv3.jpg'
 import serv4 from '../Assets/serv4.jpg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const First = styled.div`
     margin-top: -7%;
@@ -21,9 +23,6 @@ const First = styled.div`
     padding: 5%;
 `
 const Card = styled.div`
-    background: #0680bcc2;
-    border-radius: 5px;
-    box-shadow: rgba(63, 38, 38, 0.35) 0px 5px 15px;
     height: 50vh;
     width: 60%;
     padding: 2%;
@@ -32,7 +31,7 @@ const Card = styled.div`
     justify-content: center;
     align-items: flex-start;
     h1{
-        font-size: 4vw;
+        font-size: 6vw;
         color: #fff;
     }
 `
@@ -67,9 +66,8 @@ const SecondSEction = styled.section`
         gap: 5%;
         align-items: flex-start;
         padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
-        color: #020008;
         h1{
             font-size: 2vw;
             font-weight: 800;
@@ -79,7 +77,6 @@ const SecondSEction = styled.section`
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
-            color: #020008;
             font-weight: 500;
         }
     }
@@ -124,9 +121,8 @@ const SecondSEction2 = styled.section`
         gap: 5%;
         align-items: flex-start;
         padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
-        color: #020008;
         h1{
             font-size: 2vw;
             font-weight: 800;
@@ -136,7 +132,6 @@ const SecondSEction2 = styled.section`
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
-            color: #020008;
             font-weight: 500;
         }
     }
@@ -181,9 +176,8 @@ const SecondSEction3 = styled.section`
         gap: 5%;
         align-items: flex-start;
         padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
-        color: #020008;
         h1{
             font-size: 2vw;
             font-weight: 800;
@@ -193,7 +187,6 @@ const SecondSEction3 = styled.section`
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
-            color: #020008;
             font-weight: 500;
         }
     }
@@ -238,9 +231,8 @@ const SecondSEction4 = styled.section`
         gap: 5%;
         align-items: flex-start;
         padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
-        color: #020008;
         h1{
             font-size: 2vw;
             font-weight: 800;
@@ -250,7 +242,6 @@ const SecondSEction4 = styled.section`
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
-            color: #020008;
             font-weight: 500;
         }
     }
@@ -264,85 +255,91 @@ const SecondSEction4 = styled.section`
         -o-background-size:cover;
     }
 `
+const List = styled.ul`
+    color: ${props=>props.cl};
+`
 
-function Service() {
+function Service({darkMode}) {
+    useEffect(()=>{
+        Aos.init({duration : 3000})
+    },[])
   return (
     <div>
         <First>
-            <Card>
+            <Card  data-aos="fade-left">
                 <h1>SERVICES</h1>
             </Card>
         </First>
 
         <SecondSEction>
-            <div className="left">
+            <div className="left"  data-aos="fade-right">
                 <h1>
                     Consulting Services
                 </h1>
 
-                <ul>
+                <List cl={darkMode ? 'white' : 'black'}>
                     <li>Analyze issues/challenges and propose remedial actions.</li>
                     <li>Plan, build and support ICT solutions that help organizations reduce cost, increase reve-nue, manage risk and value add processes.</li>
                     <li>Carry out reviews on Compliance, Policies, Procedures and new ways of working em-bedment.</li>
                     <li>Programme and project management</li>
-                </ul>
+                </List>
 
                 
             </div>
 
-            <div className="right"></div>
+            <div className="right"  data-aos="fade-left"></div>
         </SecondSEction>
 
         <SecondSEction2>
-            <div className="right"></div>
+            <div className="right"  data-aos="fade-left"></div>
 
-            <div className="left">
+            <div className="left"  data-aos="fade-right">
                 <h1>
                     IT Infrastructure Services
                 </h1>
 
-                <ul>
+                <List cl={darkMode ? 'white' : 'black'}>
                     <li>Full integration and support of a wide range of I.T services such as computers, telecommunication, V-SAT and network equipment, Access Control, CCTV, Professional Audio Visual and Renewable Energy Systems.</li>
                     <li>Supply, installation, support and maintenance of computer systems, Printers, Plotters, Laptops, UPS, Servers, digital cameras and all other PC peripherals.</li>
                     <li>Installation and commissioning of WAN and LAN links using Microwave, Fibre cabling and twisted pair cable where applicable.</li>
-                </ul>
+                </List>
 
                 
             </div>
         </SecondSEction2>
 
         <SecondSEction3>
-            <div className="left">
+            <div className="left"  data-aos="fade-left">
                 <h1>
                     Software Systems
                 </h1>
 
-                <ul>
+                <List cl={darkMode ? 'white' : 'black'}>
                     <li>Design, Installation, Integration and support for software programs.</li>
                     <li>Customer interactive solutions.</li>
                     <li>Carry out reviews on Compliance, Policies, Procedures and new ways of working em-bedment.</li>
                     <li>Service provider solutions.</li>
-                </ul>
+                </List>
 
                 
             </div>
 
-            <div className="right"></div>
+            <div className="right"  data-aos="fade-right"></div>
         </SecondSEction3>
 
         <SecondSEction4>
-            <div className="right"></div>
+            <div className="right"  data-aos="fade-left"></div>
 
-            <div className="left">
+            <div className="left"  data-aos="fade-right">
                 <h1>
                     IT Infrastructure Services
                 </h1>
 
-                <ul>
+                <List cl={darkMode ? 'white' : 'black'}>
                     <li>Full integration and support of a wide range of I.T services such as computers, telecommunication, V-SAT and network equipment, Access Control, CCTV, Professional Audio Visual and Renewable Energy Systems.</li>
                     <li>Supply, installation, support and maintenance of computer systems, Printers, Plotters, Laptops, UPS, Servers, digital cameras and all other PC peripherals.</li>
                     <li>Installation and commissioning of WAN and LAN links using Microwave, Fibre cabling and twisted pair cable where applicable.</li>
-                </ul>
+                </List>
 
                 
             </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarouselComponent from './CarouselComponent'
 import styled from 'styled-components'
 import Accord from './Accord'
@@ -8,6 +8,9 @@ import {FiSettings} from 'react-icons/fi'
 import land from '../Assets/land.png'
 import MyVerticallyCenteredModal from './MyVerticallyCenteredModal'
 import MyVerticallyCenteredModalRight from './MyVerticallyCenteredModalRight'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import { Link } from 'react-router-dom'
 
 const SecondSEction = styled.section`
     width: 100%;
@@ -40,9 +43,9 @@ const SecondSEction = styled.section`
         gap: 5%;
         align-items: flex-start;
         padding: 2%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
-        color: #020008;
+        color: ${props=>[props.cl]};
         h1{
             font-size: 3vw;
             font-weight: 800;
@@ -51,22 +54,8 @@ const SecondSEction = styled.section`
             line-height: 30px;
             text-align: justify;
             font-size: 1.2vw;
-            color: #020008;
+            color: ${props=>[props.cl]};
             font-weight: 500;
-        }
-        button{
-            padding: 2% 7%;
-            font-size: 1.3vw;
-            background: #020008;
-            border-radius: 5px;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: all 0.5s linear;
-            &:hover{
-                background: #0680bcc2;
-                color: #fff;
-            }
         }
     }
 `
@@ -181,7 +170,7 @@ const FourthSection = styled.section`
                 display: flex;
                 justify-content: center;
                 border-radius: 15px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 align-items: center;  
                 filter: sepia();
                 cursor: pointer;
@@ -207,7 +196,7 @@ const FourthSection = styled.section`
                 -o-background-size:cover;
                 background-repeat: no-repeat;
                 border-radius: 15px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 filter: sepia();
                 cursor: pointer;
                 transition: all .5s linear;
@@ -221,7 +210,6 @@ const FifthSection = styled.div`
     width: 100%;
     height: 70vh;
     margin-top: 10%;
-    background: #f3ffff;
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -277,6 +265,10 @@ const FifthSection = styled.div`
             margin-top: 2%;
             font-size: 2vw;
             transition: all .5s linear;
+            a{
+                text-decoration: none;
+                color: #000;
+            }
             &:hover{
                 background: #fff;
                 color:#0680bcc2;
@@ -285,26 +277,43 @@ const FifthSection = styled.div`
         }
     }
 `
+const Btn = styled.button`
+        padding: 2% 7%;
+        font-size: 1.3vw;
+        background: ${props => props.bg};
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        &:hover{
+            background: #0680bcc2;
+            color: #fff;
+        }
+`
 
+function Home({darkMode}) {
+    useEffect(()=>{
+        Aos.init({duration : 1000})
+    },[])
 
-function Home() {
     const [modalShow, setModalShow] = React.useState(false);
     const [modalShow2, setModalShow2] = React.useState(false);
   return (
     <div>
         <CarouselComponent/>
         <SecondSEction>
-            <div className="left">
+            <div className="left"  data-aos="fade-right">
                 <h1>
                 Mission Statement
                 </h1>
 
                 <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
-                <button>more</button>
+                <Btn bg={darkMode ? '#0680bcc2' : 'black'}>more</Btn>
                 
             </div>
 
-            <Accord/>
+            <Accord  data-aos="fade-left"/>
         </SecondSEction>
         <ThirdSEction>
             <div className="card">
@@ -329,7 +338,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="card">
+            <div className="card" cl={darkMode ? '#fff' : null}>
                 <div className="top">
                     <MdComputer size='3rem'/>
                 </div>
@@ -380,10 +389,10 @@ function Home() {
                 <p>Below are some our Solutions. Click on the images for more info</p>
             </div>
             <div className="bottom">
-                <div className="filling" onClick={() => setModalShow(true)}>
+                <div className="filling" onClick={() => setModalShow(true)} data-aos="fade-right">
                     <p>Enterprise filling system</p>
                 </div>
-                <div className="land" onClick={() => setModalShow2(true)}>
+                <div className="land" onClick={() => setModalShow2(true)} data-aos="fade-left">
 
                 </div>
             </div>
@@ -398,14 +407,15 @@ function Home() {
             />
         </FourthSection>
 
-        <FifthSection>
+        <FifthSection data-aos="fade-up"
+     data-aos-duration="3000">
             <div className="left">
                 <img src="/idea.webp" alt="" srcset="" />
             </div>
             <div className="right">
                 <h3>Want to know more?</h3>
                 <p>Speak to one of our technology professionals on how to achieve the desired results for your business.</p>
-                <button className='contact'>Contact Us</button>
+                <button className='contact'><Link to='/contact'>Contact Us</Link></button>
             </div>
         </FifthSection>
 

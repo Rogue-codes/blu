@@ -13,9 +13,7 @@
 }
 .caption{
   top: 30%;
-  background: #067fbc00;
   border-radius: 5px;
-  box-shadow: rgba(63, 38, 38, 0.35) 0px 5px 15px;
   height: 50vh;
   padding: 2%;
   display: flex;
@@ -56,12 +54,13 @@
 }
 .accd{
   width: 50%;
-  height: 60vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 50vh;
   border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .bod{
   background:#0680bcc2;
+  height: 100%;
   color:#fff;
 }
 .Head{
@@ -70,9 +69,6 @@
 }
 #contained-modal-title-vcenter{
   color: #067fbcfe;
-}
-.btn{
-  background:#067fbcfe !important;
 }
 @media (max-width:450px) {
   .carousel-container{
@@ -85,7 +81,7 @@
   .accd{
     width: 100%;
     height: 60vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
   }
 }
