@@ -13,6 +13,9 @@ import "aos/dist/aos.css"
 import { Link } from 'react-router-dom'
 
 const SecondSEction = styled.section`
+    @media (max-width:450px) {
+        flex-direction: column;
+    }
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -20,19 +23,9 @@ const SecondSEction = styled.section`
     gap: 5%;
     align-items: center;
     padding: 2%;
-    @media (max-width:450px) {
-        margin-top: 0%;
-        flex-direction: column;
-        gap: 10%;
-        border: 11px solid #000;
-    }
     .left{
         @media (max-width:450px) {
-            margin-top: 0%;
             width: 100%;
-            flex-direction: column;
-            height: auto;
-            border: 11px solid #000;
         }
         width: 50%;
         height: 60vh;
@@ -47,10 +40,16 @@ const SecondSEction = styled.section`
         font-family: 'Raleway', sans-serif;
         color: ${props=>[props.cl]};
         h1{
+            @media (max-width:450px) {
+                font-size: 2rem;
+            }
             font-size: 3vw;
             font-weight: 800;
         }
         p{
+            @media (max-width:450px) {
+              font-size: .8rem;
+            }
             line-height: 30px;
             text-align: justify;
             font-size: 1.2vw;
@@ -60,9 +59,6 @@ const SecondSEction = styled.section`
     }
 `
 const ThirdSEction = styled.div`
-    @media (max-width:480px) {
-        display: none;
-    }
     width: 100%;
     height: 100vh;
     display: flex;
@@ -77,6 +73,9 @@ const ThirdSEction = styled.div`
     align-items: center;
     padding: 5%;
     transition: all .3s linear;
+    @media (max-width:480px) {
+        display: none;
+    }
     &:hover{
         .card{
             transition: all .3s linear;
@@ -148,17 +147,34 @@ const FourthSection = styled.section`
         .top{
             height: 50%;
             h1{
+                @media (max-width:450px) {
+                    font-size: 2rem;
+                    margin-top: 15%;
+                }
                 text-align: center;
                 font-size: 4vw;
             }
+            p{
+                text-align: center;
+                margin-bottom: 10%;
+            }
         }
         .bottom{
+            @media (max-width:450px) {
+                flex-direction: column;
+                align-items: center;
+                height: 100vh;
+            }
             height: 50vh;
             width: 100%;
             display: flex;
             justify-content: space-between;
             gap: 5%;
             .filling{
+                @media (max-width:450px) {
+                    width: 100%;
+                    height: 50%;
+                }
                 width: 50%;
                 height: 100%;
                 background:url('https://images.pexels.com/photos/1370294/pexels-photo-1370294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
@@ -179,6 +195,10 @@ const FourthSection = styled.section`
                     filter: none;
                 }
                 p{
+                    @media (max-width:450px) {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
                     font-size: 2vw;
                     letter-spacing: 5px;
                     color: #fff;
@@ -187,6 +207,10 @@ const FourthSection = styled.section`
                 }
             }
             .land{
+                @media (max-width:450px) {
+                    width: 100%;
+                    height: 50%;
+                }
                 width: 50%;
                 height: 100%;
                 background: url(${land});
@@ -207,6 +231,9 @@ const FourthSection = styled.section`
         }
 `
 const FifthSection = styled.div`
+    @media (max-width:450px) {
+        flex-direction: column;
+    }
     width: 100%;
     height: 70vh;
     margin-top: 10%;
@@ -216,6 +243,10 @@ const FifthSection = styled.div`
     align-items: center;
     padding: 4%;
     .left{
+        @media (max-width:450px) {
+            width: 200px;
+            height: 200px;
+        }
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -237,6 +268,9 @@ const FifthSection = styled.div`
         }
     }
     .right{
+        @media (max-width:450px) {
+            width: 100%;
+        }
         width: 50%;
         height: 80%;
         display: flex;
@@ -244,16 +278,25 @@ const FifthSection = styled.div`
         justify-content: center;
         padding: 2%;
         h3{
+            @media (max-width:450px) {
+                font-size: 2rem;
+            }
             font-size: 4vw;
             font-weight: 900;
             font-family: 'Roboto Condensed', sans-serif;
         }
         p{
+            @media (max-width:450px) {
+                font-size: 1.2rem;
+            }
             font-size: 2vw;
             font-weight: 500;
             font-family: 'Roboto Condensed', sans-serif;
         }
         .contact{
+            @media (max-width:450px) {
+                font-size: 1rem;
+            }
             width:35% ;
             padding: 2% 5%;
             margin-left: 2%;
@@ -278,18 +321,21 @@ const FifthSection = styled.div`
     }
 `
 const Btn = styled.button`
-        padding: 2% 7%;
-        font-size: 1.3vw;
-        background: ${props => props.bg};
-        border-radius: 5px;
+    @media (max-width:450px) {
+      font-size: 1rem;
+    }
+    padding: 2% 7%;
+    font-size: 1.3vw;
+    background: ${props => props.bg};
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    &:hover{
+        background: #0680bcc2;
         color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: all 0.5s linear;
-        &:hover{
-            background: #0680bcc2;
-            color: #fff;
-        }
+    }
 `
 
 function Home({darkMode}) {

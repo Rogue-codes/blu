@@ -7,6 +7,9 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 
 const First = styled.div`
+    @media (max-width:450px) {
+      margin-top: -20%;
+    }
     margin-top: -7%;
     width: 100%;
     height: 100vh;
@@ -29,6 +32,9 @@ const Card = styled.div`
     justify-content: center;
     align-items: flex-start;
     h1{
+        @media (max-width:450px) {
+            font-size: 2rem;
+        }
         font-size: 6vw;
         color: #fff;
     }
@@ -45,10 +51,6 @@ const SecondSEction = styled.section`
         margin-top: 0%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
-    }
-    .left{
-       
     }
     .right{
         width: 50%;
@@ -58,9 +60,15 @@ const SecondSEction = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        @media (max-width:450px) {
+            width: 100%;
+        }
     }
 `
 const ThirdSection = styled.div`
+    @media (max-width:450px) {
+        margin-top: 10%;
+    }
     width: 100%;
     height: 70vh;
     background: url(${cld});
@@ -74,26 +82,37 @@ const ThirdSection = styled.div`
     align-items: center;
 `
 const Banner = styled.div`
+    @media (max-width:450px) {
+        width: 80%;
+        height: 60%;
+    }
     width: 40%;
     height: 55%;
     background: ${props => props.bg};
     padding: 2%;
     h1{
+        @media (max-width:450px) {
+            font-size: 1.2rem;
+        }
         font-size: 2vw;
         color:#067fbcfc;
     }
     p{
+        @media (max-width:450px) {
+            font-size: .7rem;
+            font-family: 'Raleway', sans-serif;
+        }
         font-size: 1.2vw;
     }
 `
 const Left = styled.div`
     color:${props => props.cl};   
- @media (max-width:450px) {
+        @media (max-width:450px) {
             margin-top: 0%;
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
+            margin-bottom: 10%;
         }
         width: 50%;
         height: 60vh;
@@ -107,10 +126,16 @@ const Left = styled.div`
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
         h1{
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
             font-size: 3vw;
             font-weight: 800;
         }
         p{
+            @media (max-width:450px) {
+              font-size: .8rem;
+            } 
             line-height: 30px;
             text-align: justify;
             font-size: 1.2vw;

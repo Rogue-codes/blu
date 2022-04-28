@@ -9,6 +9,9 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 
 const First = styled.div`
+    @media (max-width:450px) {
+      margin-top: -20%;
+    }
     margin-top: -7%;
     width: 100%;
     height: 100vh;
@@ -31,6 +34,9 @@ const Card = styled.div`
     justify-content: center;
     align-items: flex-start;
     h1{
+        @media (max-width:450px) {
+            font-size: 2rem;
+        }
         font-size: 6vw;
         color: #fff;
     }
@@ -47,7 +53,6 @@ const SecondSEction = styled.section`
         margin-top: 0%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
     }
     .left{
         @media (max-width:450px) {
@@ -55,7 +60,7 @@ const SecondSEction = styled.section`
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
+            margin-bottom: 12%;
         }
         width: 50%;
         height: 60vh;
@@ -69,11 +74,17 @@ const SecondSEction = styled.section`
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
         h1{
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
             font-size: 2vw;
             font-weight: 800;
             color: #0680bcc2;
         }
         li{
+            @media (max-width:450px) {
+              font-size: .8rem;
+            }
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
@@ -88,6 +99,9 @@ const SecondSEction = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        @media (max-width:450px) {
+            width: 100%;
+        }
     }
 `
 const SecondSEction2 = styled.section`
@@ -99,18 +113,16 @@ const SecondSEction2 = styled.section`
     align-items: center;
     padding: 2%;
     @media (max-width:450px) {
-        margin-top: 0%;
+        margin-top: 10%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
     }
     .left{
         @media (max-width:450px) {
-            margin-top: 0%;
+            margin-top: 10%;
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
         }
         width: 50%;
         height: 60vh;
@@ -124,11 +136,17 @@ const SecondSEction2 = styled.section`
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
         h1{
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
             font-size: 2vw;
             font-weight: 800;
             color: #0680bcc2;
         }
         li{
+            @media (max-width:450px) {
+              font-size: .8rem;
+            }
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
@@ -143,6 +161,9 @@ const SecondSEction2 = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        @media (max-width:450px) {
+            width: 100%;
+        }
     }
 `
 const SecondSEction3 = styled.section`
@@ -157,7 +178,6 @@ const SecondSEction3 = styled.section`
         margin-top: 0%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
     }
     .left{
         @media (max-width:450px) {
@@ -165,7 +185,7 @@ const SecondSEction3 = styled.section`
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
+            margin-bottom: 12%;
         }
         width: 50%;
         height: 60vh;
@@ -179,11 +199,17 @@ const SecondSEction3 = styled.section`
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
         h1{
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
             font-size: 2vw;
             font-weight: 800;
             color: #0680bcc2;
         }
         li{
+            @media (max-width:450px) {
+              font-size: .8rem;
+            }
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
@@ -198,6 +224,9 @@ const SecondSEction3 = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        @media (max-width:450px) {
+            width: 100%;
+        }
     }
 `
 const SecondSEction4 = styled.section`
@@ -209,10 +238,9 @@ const SecondSEction4 = styled.section`
     align-items: center;
     padding: 2%;
     @media (max-width:450px) {
-        margin-top: 0%;
+        margin-top: 10%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
     }
     .left{
         @media (max-width:450px) {
@@ -220,7 +248,6 @@ const SecondSEction4 = styled.section`
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
         }
         width: 50%;
         height: 60vh;
@@ -237,12 +264,18 @@ const SecondSEction4 = styled.section`
             font-size: 2vw;
             font-weight: 800;
             color: #0680bcc2;
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
         }
         li{
             line-height: 30px;
             text-align: justify;
             font-size: 1vw;
             font-weight: 500;
+            @media (max-width:450px) {
+              font-size: .8rem;
+            }
         }
     }
     .right{
@@ -253,6 +286,10 @@ const SecondSEction4 = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        @media (max-width:450px) {
+            width: 100%;
+            margin-bottom: 10%;
+        }
     }
 `
 const List = styled.ul`

@@ -71,8 +71,11 @@
   color: #067fbcfe;
 }
 @media (max-width:450px) {
+  .carousel-container .carousel-slide{
+    height: 50%;
+  }
   .carousel-container{
-    margin-top: 0%;
+    margin-top: -20%;
   }
   .caption{
     height: 25vh;

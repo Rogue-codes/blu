@@ -11,6 +11,9 @@ import toast from 'react-hot-toast'
 import { Toaster } from 'react-hot-toast';
 
 const First = styled.div`
+    @media (max-width:450px) {
+      margin-top: -20%;
+    }
     margin-top: -7%;
     width: 100%;
     height: 100vh;
@@ -27,6 +30,9 @@ const First = styled.div`
 `
 const Card = styled.div`
     h1{
+      @media (max-width:450px) {
+        font-size: 2rem;
+      }
         font-size: 6vw;
         color: #fff;
     }
@@ -44,7 +50,6 @@ const SecondSEction = styled.section`
         margin-top: 0%;
         flex-direction: column;
         gap: 10%;
-        border: 11px solid #000;
     }
     .left{
         @media (max-width:450px) {
@@ -52,7 +57,7 @@ const SecondSEction = styled.section`
             width: 100%;
             flex-direction: column;
             height: auto;
-            border: 11px solid #000;
+            margin-bottom: 15%;
         }
         width: 50%;
         height: 40vh;
@@ -66,18 +71,30 @@ const SecondSEction = styled.section`
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: 'Raleway', sans-serif;
         h1{
+            @media (max-width:450px) {
+              font-size: 1.2rem;
+            }
             font-size: 2vw;
             font-weight: 800;
             color: #0680bcc2;
         }
         li{
-            line-height: 30px;
+          @media (max-width:450px) {
+              font-size: .8rem;
+          }  
+          line-height: 30px;
             text-align: justify;
             font-size: 1.2vw;
             font-weight: 500;
         }
     }
     .right{
+        @media (max-width:450px) {
+              width: 100%;
+              flex-direction: column;
+              height: auto;
+              margin-bottom: 5%;
+        }
         width: 50%;
         height: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -96,10 +113,16 @@ const Form = styled.form`
     border: 1px solid lightgrey;
     height: 8vh;
     padding-left: 2%;
+    @media (max-width:450px) {
+      font-size: .8rem;
+    }
     &:focus{
       outline: none;
     }
     &::placeholder{
+      @media (max-width:450px) {
+        font-size: .5rem;
+      }
       font-size: 1vw;
     }
   }
@@ -114,6 +137,9 @@ const Form = styled.form`
     border-radius: 5px;
     margin-bottom: 5%;
     display: block;
+    @media (max-width:450px) {
+      font-size: 1rem;
+    }
   }
 `
 const List = styled.ul`
@@ -131,8 +157,17 @@ const Textarea =styled.textarea`
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding-top: 2%;
+    @media (max-width:450px) {
+      font-size: .8rem;
+    }
     &:focus{
       outline: none;
+    }
+    &::placeholder{
+      @media (max-width:450px) {
+        font-size: .5rem;
+      }
+      font-size: 1vw;
     }
 `
 
