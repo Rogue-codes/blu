@@ -137,6 +137,8 @@ const ThirdSEction = styled.div`
 `
 const FourthSection = styled.section`
         width: 100%;
+        margin-top: 25%;
+        margin-bottom: 35%;
         min-height: 100vh;
         display: flex;
         justify-content: space-between;

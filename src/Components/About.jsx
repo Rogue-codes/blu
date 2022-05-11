@@ -169,7 +169,7 @@ function About({darkMode}) {
 
         <ThirdSection>
             <Banner data-aos="fade-up"
-     data-aos-duration="3000" bg={darkMode ? '#000' : '#fff'}>
+     data-aos-duration="3000" bg={darkMode ? '#333' : '#fff'}>
                 <h1>Our History</h1>
                 <p>BlueBird Cmast Nig, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
             </Banner>
