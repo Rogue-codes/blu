@@ -11,6 +11,7 @@ import "aos/dist/aos.css"
 const First = styled.div`
     @media (max-width:450px) {
       margin-top: -20%;
+      height: 70vh;
     }
     margin-top: -7%;
     width: 100%;
@@ -35,7 +36,7 @@ const Card = styled.div`
     align-items: flex-start;
     h1{
         @media (max-width:450px) {
-            font-size: 2rem;
+            font-size: 4rem;
         }
         font-size: 6vw;
         color: #fff;
@@ -75,7 +76,7 @@ const SecondSEction = styled.section`
         font-family: 'Raleway', sans-serif;
         h1{
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
             }
             font-size: 2vw;
             font-weight: 800;
@@ -83,7 +84,8 @@ const SecondSEction = styled.section`
         }
         li{
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.2rem;
+              padding-right: 2%;
             }
             line-height: 30px;
             text-align: justify;
@@ -137,7 +139,7 @@ const SecondSEction2 = styled.section`
         font-family: 'Raleway', sans-serif;
         h1{
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
             }
             font-size: 2vw;
             font-weight: 800;
@@ -145,7 +147,8 @@ const SecondSEction2 = styled.section`
         }
         li{
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.2rem;
+              padding-right: 2%;
             }
             line-height: 30px;
             text-align: justify;
@@ -200,7 +203,7 @@ const SecondSEction3 = styled.section`
         font-family: 'Raleway', sans-serif;
         h1{
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
             }
             font-size: 2vw;
             font-weight: 800;
@@ -208,7 +211,8 @@ const SecondSEction3 = styled.section`
         }
         li{
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.2rem;
+              padding-right: 2%;
             }
             line-height: 30px;
             text-align: justify;
@@ -265,7 +269,7 @@ const SecondSEction4 = styled.section`
             font-weight: 800;
             color: #0680bcc2;
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
             }
         }
         li{
@@ -274,7 +278,8 @@ const SecondSEction4 = styled.section`
             font-size: 1vw;
             font-weight: 500;
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.2rem;
+              padding-right: 2%;
             }
         }
     }

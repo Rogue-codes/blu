@@ -13,7 +13,7 @@ import { Toaster } from 'react-hot-toast';
 const First = styled.div`
     @media (max-width:450px) {
       margin-top: -20%;
-      height: 60vh;
+      height: 70vh;
     }
     margin-top: -7%;
     width: 100%;
