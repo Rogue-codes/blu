@@ -19,6 +19,9 @@ const Navbar = styled.nav`
     top: 0;
     bottom: 0;
     z-index: 5;
+    @media (max-width:480px) {
+        background-color: #067fbc;        
+    }
     .bars{
         display: none;
         @media (max-width:480px) {

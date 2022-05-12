@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom'
 const SecondSEction = styled.section`
     @media (max-width:450px) {
         flex-direction: column;
+        margin-top: 50%;
     }
     width: 100%;
     min-height: 100vh;
@@ -48,7 +49,7 @@ const SecondSEction = styled.section`
         }
         p{
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.3rem;
             }
             line-height: 30px;
             text-align: justify;

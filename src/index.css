@@ -11,6 +11,17 @@
   position: relative;
   height: 100vh;
 }
+@media (max-width:480px) {
+  .carousel-container .carousel-slide{
+    height: 100vh!important;
+    margin-top: 20%;
+  }
+  .carousel-container .carousel-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 .caption{
   top: 30%;
   border-radius: 5px;
@@ -52,7 +63,29 @@
   background: #fff;
   color:#0680bcc2;
 }
+@media (max-width:480px) {
+  .caption{
+    top: 35%!important;
+    width: 100%!important;
+    left: 0%!important;
+  }
+  .caption h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .caption p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .caption button{
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+}
 .accd{
+  margin-top: 40%;
   width: 50%;
   height: 50vh;
   border-radius: 5px;
