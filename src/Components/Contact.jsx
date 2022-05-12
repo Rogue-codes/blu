@@ -32,7 +32,7 @@ const First = styled.div`
 const Card = styled.div`
     h1{
       @media (max-width:450px) {
-        font-size: 2rem;
+        font-size: 4rem;
       }
         font-size: 6vw;
         color: #fff;
