@@ -9,6 +9,8 @@ import "aos/dist/aos.css"
 const First = styled.div`
     @media (max-width:450px) {
       margin-top: -20%;
+      background-position: 70% 70%;
+      height: 70vh;
     }
     margin-top: -7%;
     width: 100%;
@@ -33,7 +35,7 @@ const Card = styled.div`
     align-items: flex-start;
     h1{
         @media (max-width:450px) {
-            font-size: 2rem;
+            font-size: 4rem;
         }
         font-size: 6vw;
         color: #fff;
