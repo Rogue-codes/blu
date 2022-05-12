@@ -62,6 +62,7 @@ const Navbar = styled.nav`
         display: block;
         color: #fff;
         margin-top: 5%;
+        padding: 5%;
         margin-bottom: 9%;
         border-bottom: 1px solid #fff;
         text-decoration: none;
