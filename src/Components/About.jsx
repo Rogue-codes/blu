@@ -84,7 +84,12 @@ const ThirdSection = styled.div`
 const Banner = styled.div`
     @media (max-width:450px) {
         width: 80%;
-        height: 60%;
+        height: auto;
+        padding: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     width: 40%;
     height: 55%;
@@ -92,14 +97,14 @@ const Banner = styled.div`
     padding: 2%;
     h1{
         @media (max-width:450px) {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         font-size: 2vw;
         color:#067fbcfc;
     }
     p{
         @media (max-width:450px) {
-            font-size: .7rem;
+            font-size: 1rem;
             font-family: 'Raleway', sans-serif;
         }
         font-size: 1.2vw;
@@ -127,14 +132,14 @@ const Left = styled.div`
         font-family: 'Raleway', sans-serif;
         h1{
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 1.5rem;
             }
             font-size: 3vw;
             font-weight: 800;
         }
         p{
             @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1rem;
             } 
             line-height: 30px;
             text-align: justify;

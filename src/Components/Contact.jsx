@@ -13,6 +13,7 @@ import { Toaster } from 'react-hot-toast';
 const First = styled.div`
     @media (max-width:450px) {
       margin-top: -20%;
+      height: 60vh;
     }
     margin-top: -7%;
     width: 100%;
@@ -72,7 +73,8 @@ const SecondSEction = styled.section`
         font-family: 'Raleway', sans-serif;
         h1{
             @media (max-width:450px) {
-              font-size: 1.2rem;
+              font-size: 2rem;
+              padding-left: 2%;
             }
             font-size: 2vw;
             font-weight: 800;
@@ -80,11 +82,12 @@ const SecondSEction = styled.section`
         }
         li{
           @media (max-width:450px) {
-              font-size: .8rem;
+              font-size: 1.2rem;
           }  
-          line-height: 30px;
+            line-height: 30px;
             text-align: justify;
             font-size: 1.2vw;
+            padding-top: 8%;
             font-weight: 500;
         }
     }
@@ -114,14 +117,14 @@ const Form = styled.form`
     height: 8vh;
     padding-left: 2%;
     @media (max-width:450px) {
-      font-size: .8rem;
+      font-size: 1rem;
     }
     &:focus{
       outline: none;
     }
     &::placeholder{
       @media (max-width:450px) {
-        font-size: .5rem;
+        font-size: 1rem;
       }
       font-size: 1vw;
     }
@@ -158,14 +161,14 @@ const Textarea =styled.textarea`
     border-radius: 5px;
     padding-top: 2%;
     @media (max-width:450px) {
-      font-size: .8rem;
+      font-size: 1rem;
     }
     &:focus{
       outline: none;
     }
     &::placeholder{
       @media (max-width:450px) {
-        font-size: .5rem;
+        font-size: 1rem;
       }
       font-size: 1vw;
     }

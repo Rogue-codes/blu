@@ -13,7 +13,7 @@
 }
 @media (max-width:480px) {
   .carousel-container .carousel-slide{
-    height: 100vh!important;
+    height: 60vh!important;
     margin-top: 20%;
   }
   .carousel-container .carousel-slide img{
@@ -77,7 +77,7 @@
   .caption p{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
-    text-align: center;
+    margin-left: 10%;
   }
   .caption button{
     font-size: 1rem;
