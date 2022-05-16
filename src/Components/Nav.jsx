@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useTransition, animated } from 'react-spring'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import logo from '../Assets/logo.png'
 
 
 const Navbar = styled.nav`
@@ -74,6 +75,14 @@ const Navbar = styled.nav`
 const Logo = styled.h1`
     font-family: 'Rubik Wet Paint', cursive;
     color: #fff;
+    height: 80px;
+    width: 100px;
+    background: url(${logo});
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position: 10% 50%;
 `
 const Links = styled.div`
     @media (max-width:450px) {
@@ -154,7 +163,7 @@ function Nav({toggleDarkMode,darkMode}) {
     })
   return (
     <Navbar bgc={ bg ? '#0680bcc2' : 'transparent'}>
-        <Logo>BLU</Logo>
+        <Logo></Logo>
 
         <Links>
             <Link to='/'>HOME</Link>
