@@ -36,6 +36,9 @@ const BT = styled.button`
   background: #0680bcc2;
 `
 const Whatsapp = styled.a`
+  @media (max-width:480px) {
+    left: 80%;
+  }
   cursor: pointer;
   position: fixed;
   left: 95%;
