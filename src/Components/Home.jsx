@@ -24,6 +24,7 @@ const SecondSEction = styled.section`
     gap: 5%;
     align-items: center;
     padding: 2%;
+    margin-top: -10%;
     .left{
         @media (max-width:450px) {
             width: 100%;
@@ -138,7 +139,7 @@ const ThirdSEction = styled.div`
 `
 const FourthSection = styled.section`
         width: 100%;
-        margin-top: 25%;
+        margin-top: 5%;
         margin-bottom: 10%;
         min-height: 100vh;
         display: flex;
