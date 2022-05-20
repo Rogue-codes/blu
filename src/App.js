@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import { useState } from "react";
 import styled from 'styled-components'
 import {IoMdArrowDropupCircle} from 'react-icons/io'
+import {IoLogoWhatsapp} from 'react-icons/io'
 
 const Container = styled.div`
     background: ${props => props.bg};
@@ -34,8 +35,26 @@ const BT = styled.button`
   border: none;
   background: #0680bcc2;
 `
+const Whatsapp = styled.a`
+  cursor: pointer;
+  position: fixed;
+  left: 95%;
+  top: 80%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .5s linear;
+  border: none;
+  &:hover{
+    transform: scale(1.1)
+  }
+`
 
 function App() {
+
   const [darkMode, setDarkMode] = useState(false)
 
   const toggleDarkMode = () => {
@@ -65,6 +84,7 @@ function App() {
         <a href="#top">
           <BT opa={scroll ? '1' : '0'}><IoMdArrowDropupCircle size='2rem' color='black'/></BT>
         </a>
+        <Whatsapp href="https://api.whatsapp.com/send?phone=2347086793671"><IoLogoWhatsapp color='green' size='2.5rem' /></Whatsapp>
         <Footer darkMode={darkMode} />
       </Router>
       

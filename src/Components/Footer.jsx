@@ -8,6 +8,7 @@ const Foot = styled.footer`
     border-top: 1px solid #f9eeee;
     margin-top: 5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 2%;

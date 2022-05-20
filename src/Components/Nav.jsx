@@ -1,9 +1,11 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useTransition, animated } from 'react-spring'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import logo from '../Assets/logo.png'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 const Navbar = styled.nav`
@@ -72,17 +74,26 @@ const Navbar = styled.nav`
   }
 `
 
-const Logo = styled.h1`
-    font-family: 'Rubik Wet Paint', cursive;
+const Logo = styled.div`
     color: #fff;
-    height: 80px;
-    width: 100px;
+    height: 50px;
+    width: 58px;
     background: url(${logo});
     background-size: cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
-    background-position: 10% 50%;
+    position: relative;
+    p{
+        position: absolute;
+        left: 85%;
+        bottom: 0;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 800;
+        span{
+            font-family: 'Rubik', sans-serif;
+        }
+    }
 `
 const Links = styled.div`
     @media (max-width:450px) {
@@ -127,6 +138,10 @@ const Btn = styled.button`
 `
 
 function Nav({toggleDarkMode,darkMode}) {
+    useEffect(()=>{
+        Aos.init({duration : 1000})
+    },[])
+
     const [bg, setBg] = useState(false)
 
 
@@ -163,7 +178,9 @@ function Nav({toggleDarkMode,darkMode}) {
     })
   return (
     <Navbar bgc={ bg ? '#0680bcc2' : 'transparent'}>
-        <Logo></Logo>
+        <Logo>
+            <p data-aos="fade-right">Bluebird<span>CMAST</span></p>
+        </Logo>
 
         <Links>
             <Link to='/'>HOME</Link>
