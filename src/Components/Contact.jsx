@@ -150,10 +150,12 @@ const List = styled.ul`
 `
 const Input =styled.input`
   background: ${props => props.bg};
+  color: ${props => props.cl}
 `
 const Textarea =styled.textarea`
-  background: ${props => props.bg};
-  width: 90%;
+    background: ${props => props.bg};
+    color: ${props => props.cl};
+    width: 90%;
     padding-left: 2%;
     margin-top: 5%;
     margin-left: 5%;
@@ -229,10 +231,10 @@ function Contact({darkMode}) {
 
             <div className="right">
               <Form action="" ref={formRef} onSubmit={handleSubmit}>
-                <Input value={name} onChange={(e)=>setName(e.target.value)} bg={darkMode ? '#333' : '#e9f3f7'} name='userName' type="text" placeholder="Company Name" />
-                <Input value={email} onChange={(e)=>setEmail(e.target.value)} bg={darkMode ? '#333' : '#e9f3f7'} name="userEmail"  type="email" placeholder="Email"/>
-                <Input bg={darkMode ? '#333' : '#e9f3f7'} name="userSubject" type="text" placeholder="Subject"/>
-                <Textarea value={message} onChange={(e)=>SetMessage(e.target.value)} bg={darkMode ? '#333' : '#e9f3f7'} name="message" id="" placeholder="Message" cols="30" rows="10"></Textarea>
+                <Input value={name} onChange={(e)=>setName(e.target.value)} bg={darkMode ? '#333' : '#e9f3f7'}  cl={darkMode ? 'white' : 'black'} name='userName' type="text" placeholder="Company Name" />
+                <Input value={email} onChange={(e)=>setEmail(e.target.value)} bg={darkMode ? '#333' : '#e9f3f7'}  cl={darkMode ? 'white' : 'black'} name="userEmail"  type="email" placeholder="Email"/>
+                <Input bg={darkMode ? '#333' : '#e9f3f7'}  cl={darkMode ? 'white' : 'black'} name="userSubject" type="text" placeholder="Subject"/>
+                <Textarea value={message} onChange={(e)=>SetMessage(e.target.value)} cl={darkMode ? 'white' : 'black'} bg={darkMode ? '#333' : '#e9f3f7'} name="message" id="" placeholder="Message" cols="30" rows="10"></Textarea>
                 <button>Send</button>
                 {done && 'Your Mail has been sent'}
               </Form>
