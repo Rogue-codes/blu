@@ -89,7 +89,6 @@ const SecondSEction = styled.section`
             }
             line-height: 30px;
             text-align: justify;
-            font-size: 1vw;
             font-weight: 500;
         }
     }
@@ -152,7 +151,6 @@ const SecondSEction2 = styled.section`
             }
             line-height: 30px;
             text-align: justify;
-            font-size: 1vw;
             font-weight: 500;
         }
     }
@@ -216,7 +214,6 @@ const SecondSEction3 = styled.section`
             }
             line-height: 30px;
             text-align: justify;
-            font-size: 1vw;
             font-weight: 500;
         }
     }
@@ -275,7 +272,6 @@ const SecondSEction4 = styled.section`
         li{
             line-height: 30px;
             text-align: justify;
-            font-size: 1vw;
             font-weight: 500;
             @media (max-width:450px) {
               font-size: 1.2rem;
@@ -299,6 +295,9 @@ const SecondSEction4 = styled.section`
 `
 const List = styled.ul`
     color: ${props=>props.cl};
+    li{
+        font-size: 1.2vw;
+    }
 `
 
 function Service({darkMode}) {

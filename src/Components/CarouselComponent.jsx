@@ -5,6 +5,7 @@ import bg2 from '../Assets/blu2.png'
 import bg3 from '../Assets/blu4.webp'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom'
 function CarouselComponent() {
   useEffect(()=>{
       Aos.init({duration : 3000})
@@ -21,7 +22,7 @@ function CarouselComponent() {
     <Carousel.Caption   data-aos="fade-left" className='caption'>
       <h3 className='text'>PROVIDING EFFICIENT SOLUTIONS</h3>
       <p>Designed to address the customer's needs</p>
-      <button>Details</button>
+      <Link to='/about'>Details</Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item className='carousel-slide' interval={3000}>
@@ -34,7 +35,7 @@ function CarouselComponent() {
     <Carousel.Caption data-aos="fade-left" className='caption'>
       <h3>DEPENDABLE & RELIABLE</h3>
       <p>Round the clock reliablity.</p>
-      <button>Check Our Services</button>
+      <Link to='/service'>Check Our Services</Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item className='carousel-slide' interval={3000}>
@@ -47,7 +48,7 @@ function CarouselComponent() {
     <Carousel.Caption data-aos="fade-left" className='caption'>
     <h3>GAIN EFFICIENCY</h3>
       <p>Stay ahead of the competition.</p>
-      <button>More</button>
+      <Link to='/contact'>More</Link>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
