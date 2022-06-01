@@ -18,7 +18,7 @@ const First = styled.div`
     margin-top: -7%;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg, #000000d9 42%, rgba(2,1,18,0.6871790952709209) 77%, rgba(1,12,14,0.5051062661392682) 100%),url(${cont});
+    background: linear-gradient(90deg, #067fbc62 42%, #067fbc62 77%, #067fbc62 100%),url(${cont});
     background-size: cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import bg from '../Assets/abt.jpg'
+import bg from '../Assets/abt.webp'
 import abtbg from '../Assets/abtbg.png'
 import cld from '../Assets/cld.jpg'
 import Aos from 'aos'
@@ -15,7 +15,7 @@ const First = styled.div`
     margin-top: -7%;
     width: 100%;
     height: 100vh;
-    background: url(${bg});
+    background: linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${bg});
     background-size: cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import servbg from '../Assets/servbg.webp'
+import servbg from '../Assets/serv.jpeg'
 import serv from '../Assets/serv.jpg'
 import serv2 from '../Assets/serv2.jpg'
 import serv3 from '../Assets/serv3.jpg'
@@ -16,7 +16,7 @@ const First = styled.div`
     margin-top: -7%;
     width: 100%;
     height: 100vh;
-    background: url(${servbg});
+    background: linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${servbg});
     background-size: cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
