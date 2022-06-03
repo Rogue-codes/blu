@@ -140,9 +140,9 @@ const ThirdSEction = styled.div`
 `
 const FourthSection = styled.section`
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 10%;
-        min-height: 100vh;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        min-height: 70vh;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -150,7 +150,7 @@ const FourthSection = styled.section`
         align-items: center;
         padding: 2%;
         .top{
-            height: 50%;
+            height: 30%;
             h1{
                 @media (max-width:450px) {
                     font-size: 2rem;
@@ -241,7 +241,7 @@ const FifthSection = styled.div`
     }
     width: 100%;
     height: 70vh;
-    margin-top: 10%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -334,6 +334,7 @@ const SixthCard = styled.div`
     background: #ffffffca;
     padding: 2%;
     h1{
+        color: #0680bcc2;
         font-size: 3vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
