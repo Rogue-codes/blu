@@ -177,7 +177,7 @@ function Nav({toggleDarkMode,darkMode}) {
       // onRest: () => set(!show),
     })
   return (
-    <Navbar bgc={ bg ? '#0680bcc2' : 'transparent'}>
+    <Navbar bgc={ bg ? '#067fbc' : 'transparent'}>
         <Logo>
             <p data-aos="fade-right">Bluebird<span>CMAST</span></p>
         </Logo>

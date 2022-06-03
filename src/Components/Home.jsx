@@ -6,6 +6,7 @@ import {IoMdContacts} from 'react-icons/io'
 import {MdComputer} from 'react-icons/md'
 import {FiSettings} from 'react-icons/fi'
 import land from '../Assets/land.png'
+import logo2 from '../Assets/cloud.jpg'
 import MyVerticallyCenteredModal from './MyVerticallyCenteredModal'
 import MyVerticallyCenteredModalRight from './MyVerticallyCenteredModalRight'
 import Aos from 'aos'
@@ -251,24 +252,13 @@ const FifthSection = styled.div`
             width: 200px;
             height: 200px;
         }
-        width: 300px;
+        width: 500px;
         height: 300px;
-        border-radius: 50%;
-        animation: glow 1.0s infinite alternate;
-        @keyframes glow {
-            from {
-                      box-shadow: 0 0 10px -10px #067fbcfc;
-                    }
-                    to {
-                      box-shadow: 0 0 10px 10px #067fbcfc;
-                    }
-                }
-        }
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 50%;
         }
     }
     .right{
@@ -322,6 +312,40 @@ const FifthSection = styled.div`
                 border: 2px solid #0680bcc2;
             }
         }
+    }
+`
+const SixthSection = styled.div`
+    width: 100%;
+    height: 70vh;
+    background:  linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${logo2}) center fixed ;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position: 10% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const SixthCard = styled.div`
+    width: 60%;
+    height: 90%;
+    border-radius: 12px;
+    background: #ffffffca;
+    padding: 2%;
+    h1{
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+    }
+    h2{
+        font-size: 2vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.4vw;
     }
 `
 const Btn = styled.button`
@@ -468,6 +492,14 @@ function Home({darkMode}) {
                 <button className='contact'><Link to='/contact'>Contact Us</Link></button>
             </div>
         </FifthSection>
+
+        <SixthSection>
+            <SixthCard>
+                <h1>OUR MISSION</h1>
+                <h2>Transforming the Face of IT Support</h2>
+                <p>To help enterprise technology companies transform their technical support and services function into a strategic value creation engine for growth. With our team of acclaimed world-class professionals who are relentlessly obsessed with the consistent delivery of trail-blazing solutions that guarantee your optimum productivity. <b>BluebirdCMAST</b> has a pedigree of firsts, and remains at the forefront of technological innovations and solutions, enabling you to efficiently adapt to rapid changes while going the last-mile to support your delivery of superior Cloud solutions and processes. <b>BluebirdCMAST</b> is your one-stop IT Solution Provider.</p>
+            </SixthCard>
+        </SixthSection>
 
 
     </div>
