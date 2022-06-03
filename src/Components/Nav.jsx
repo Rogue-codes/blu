@@ -146,7 +146,7 @@ function Nav({toggleDarkMode,darkMode}) {
 
 
     const changeBg = () => {
-        if(window.scrollY >= 250){
+        if(window.scrollY >= 50){
             setBg(true)
         }else{
             setBg(false)

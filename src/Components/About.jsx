@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import bg from '../Assets/abt.webp'
 import abtbg from '../Assets/abtbg.png'
 import cld from '../Assets/cld.jpg'
+import cld2 from '../Assets/sky.webp'
 import AnimatedText from 'react-animated-text-content';
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -73,7 +74,8 @@ const ThirdSection = styled.div`
         margin-top: 10%;
     }
     width: 100%;
-    height: 70vh;
+    height: auto;
+    padding: 2%;
     background: url(${cld});
     background-size: cover;
     -webkit-background-size:cover;
@@ -94,7 +96,7 @@ const Banner = styled.div`
         align-items: center;
         flex-direction: column;
     }
-    width: 40%;
+    width: 50%;
     height: auto;
     background: ${props => props.bg};
     padding: 2%;
@@ -103,6 +105,8 @@ const Banner = styled.div`
             font-size: 1.5rem;
         }
         font-size: 2vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
         color:#067fbcfc;
     }
     p{
@@ -110,7 +114,8 @@ const Banner = styled.div`
             font-size: 1rem;
             font-family: 'Raleway', sans-serif;
         }
-        font-size: 1.2vw;
+        font-size: 1.5vw;
+        font-family: 'Raleway', sans-serif;
     }
 `
 const Left = styled.div`
@@ -139,6 +144,7 @@ const Left = styled.div`
         }
         font-size: 3vw;
         font-weight: 800;
+        color: #067fbcfc;
     }
     p{
         @media (max-width:450px) {
@@ -148,6 +154,104 @@ const Left = styled.div`
         text-align: justify;
         font-size: 1.2vw;
         font-weight: 500;
+    }
+`
+const FourthSection = styled.div`
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2%;
+`
+const FourthLeft = styled.div`
+    width: 48%;
+    height: auto;
+    h1{
+        @media (max-width:450px) {
+            font-size: 1.5rem;
+        }
+        font-size: 3vw;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        color: #067fbcfc;
+    }
+    p{
+        @media (max-width:450px) {
+            font-size: 1rem;
+        } 
+        line-height: 30px;
+        text-align: justify;
+        font-size: 1.5vw;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+    }
+`
+const FourthRight = styled.div`
+    width: 48%;
+    height: auto;
+    h1{
+        @media (max-width:450px) {
+            font-size: 1.5rem;
+        }
+        font-size: 3vw;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        color: #067fbcfc;
+    }
+    p{
+        @media (max-width:450px) {
+            font-size: 1rem;
+        } 
+        line-height: 30px;
+        text-align: justify;
+        font-size: 1.5vw;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+    }
+`
+const FifthSection = styled.div`
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${cld2});
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-attachment: fixed;
+    background-position: 10% 70%;
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+    }
+`
+const ValuesContainer = styled.div`
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+`
+const Cards = styled.div`
+    width: 24%;
+    height: 50vh;
+    background: #067fbcde;
+    padding: 1%;
+    border-radius: 5px;
+    h1{
+        color: #fff;
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.4vw;
+        color: #fff;
     }
 `
 function About({darkMode}) {
@@ -196,10 +300,50 @@ function About({darkMode}) {
         <ThirdSection>
             <Banner data-aos="fade-up"
      data-aos-duration="3000" bg={darkMode ? '#333' : '#fff'}>
-                <h1>Our History</h1>
-                <p>BlueBird Cmast Nig, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
+                <h1>WHO WE ARE</h1>
+                <p><b>BlueBird Cmast Nig</b>, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
+                <p>We redifine tech to help enterprise technology companies transform their technical support and services function into a strategic value creation engine for growth.</p>
+                <p>With our experienced team, we have been able to focus on our core solution areas and our commitment to our customers and partners remain our highest priority. </p>
+
             </Banner>
         </ThirdSection>
+
+        <FourthSection>
+            <FourthLeft>
+                <h1>Mission</h1>
+                <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
+            </FourthLeft>
+            <FourthRight>
+                <h1>Vision</h1>
+                <p>To be Africa’s largest cloud solution/ I.T Infrastructure company and enhance Prowess of digital Transformation across all businesses.</p>
+            </FourthRight>
+        </FourthSection>
+
+        <FifthSection>
+            <br />
+            <h1>OUR CORE VALUES</h1>
+            <ValuesContainer>
+                <Cards>
+                    <h1>Service</h1>
+                    <p>We Deliver quintessential I.T services to our customers.</p>
+                </Cards>
+
+                <Cards>
+                    <h1>Innovation</h1>
+                    <p>At BluebirdCMAST, we have developed the skills to be innovative and creative in all our day-to-day work. We consistently create solutions that solves daily human challenges using technology.</p>
+                </Cards>
+
+                <Cards>
+                    <h1>Excellence</h1>
+                    <p>We create service-oriented system driven by excellent performance.</p>
+                </Cards>
+
+                <Cards>
+                    <h1>Commitment</h1>
+                    <p>We value positive customer experience and are committed to ensuring all our esteemed customers get ROI during their cloud migration journey .With our commitment high customer satisfaction is guaranteed.</p>
+                </Cards>
+            </ValuesContainer>
+        </FifthSection>
         
     </div>
   )
