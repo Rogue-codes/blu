@@ -22,6 +22,7 @@ const SecondSEction = styled.section`
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
+    background: #f4f4f4;
     gap: 5%;
     align-items: center;
     padding: 2%;
@@ -148,6 +149,7 @@ const FourthSection = styled.section`
         flex-direction: column;
         gap: 5%;
         align-items: center;
+        background: #f4f4f4;
         padding: 2%;
         .top{
             height: 30%;
@@ -240,6 +242,7 @@ const FifthSection = styled.div`
         flex-direction: column;
     }
     width: 100%;
+    background: #f4f4f4;
     height: 70vh;
     margin-top: 2%;
     display: flex;
@@ -326,6 +329,7 @@ const SixthSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
 `
 const SixthCard = styled.div`
     width: 60%;
@@ -496,9 +500,10 @@ function Home({darkMode}) {
 
         <SixthSection>
             <SixthCard>
-                <h1>OUR MISSION</h1>
+                <h1>Who We Are</h1>
                 <h2>Transforming the Face of IT Support</h2>
-                <p>To help enterprise technology companies transform their technical support and services function into a strategic value creation engine for growth. With our team of acclaimed world-class professionals who are relentlessly obsessed with the consistent delivery of trail-blazing solutions that guarantee your optimum productivity. <b>BluebirdCMAST</b> has a pedigree of firsts, and remains at the forefront of technological innovations and solutions, enabling you to efficiently adapt to rapid changes while going the last-mile to support your delivery of superior Cloud solutions and processes. <b>BluebirdCMAST</b> is your one-stop IT Solution Provider.</p>
+                <p>We are a global <b>Cloud/Technology Support</b> organization providing innovative technology and business solutions to Enterprises institutions across continents.</p>
+                <p>With our business office in Portharcourt Nigeria, and an army of Highly intuitive I.T professionals and Cloud engineers with competencies across Microsoft Azure, AWS, GCP, consulting and software development, BluebirdCMAST is on a mission to support organizations and states with technologies and intellectual strength required to enable them surpass their stakeholders’ expectations.</p>
             </SixthCard>
         </SixthSection>
 
