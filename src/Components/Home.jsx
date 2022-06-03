@@ -498,7 +498,7 @@ function Home({darkMode}) {
         <SixthSection>
             <SixthCard bg={darkMode ? '#333' : '#fff'}>
                 <h1>Who We Are</h1>
-                <h2>Transforming the Face of IT Support</h2>
+                <h2>Transforming The Face of IT Support</h2>
                 <p>We are a global <b>Cloud/Technology Support</b> organization providing innovative technology and business solutions to Enterprises institutions across continents.</p>
                 <p>With our business office in Portharcourt Nigeria, and an army of Highly intuitive I.T professionals and Cloud engineers with competencies across Microsoft Azure, AWS, GCP, consulting and software development, BluebirdCMAST is on a mission to support organizations and states with technologies and intellectual strength required to enable them surpass their stakeholders’ expectations.</p>
             </SixthCard>

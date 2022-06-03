@@ -4,7 +4,7 @@ import {BsFacebook,BsTwitter} from 'react-icons/bs'
 
 const Foot = styled.footer`
     width: 100%;
-    height: 100Vh;
+    height: 80Vh;
     border-top: 1px solid #f9eeee;
     margin-top: 5%;
     display: flex;
@@ -40,9 +40,8 @@ const Bottom = styled.div`
     height: 20vh;
     border-top: 1px solid #fff;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5%;
     .left{
         @media (max-width:450px) {
@@ -51,8 +50,6 @@ const Bottom = styled.div`
         color: white;
         font-family: 'Raleway', sans-serif;
         font-size: 1.5vw;
-        margin-top: 2%;
-        margin-bottom: 5%;
     }
     .right{
         @media (max-width:450px) {
