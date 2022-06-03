@@ -379,7 +379,7 @@ function Home({darkMode}) {
     const [modalShow, setModalShow] = React.useState(false);
     const [modalShow2, setModalShow2] = React.useState(false);
   return (
-    <div>
+    <div className='home'>
         <CarouselComponent/>
         <SecondSEction>
             <div className="left"  data-aos="fade-right">

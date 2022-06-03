@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import bg from '../Assets/abt.webp'
 import abtbg from '../Assets/abtbg.png'
 import cld from '../Assets/cld.jpg'
+import AnimatedText from 'react-animated-text-content';
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -94,7 +95,7 @@ const Banner = styled.div`
         flex-direction: column;
     }
     width: 40%;
-    height: 55%;
+    height: auto;
     background: ${props => props.bg};
     padding: 2%;
     h1{
@@ -114,50 +115,68 @@ const Banner = styled.div`
 `
 const Left = styled.div`
     color:${props => props.cl};   
-        @media (max-width:450px) {
-            margin-top: 0%;
-            width: 100%;
-            flex-direction: column;
-            height: auto;
-            margin-bottom: 10%;
-        }
-        width: 50%;
-        height: 60vh;
-        border-radius: 5px;
-        display: flex;
+    @media (max-width:450px) {
+        margin-top: 0%;
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
-        gap: 5%;
-        align-items: flex-start;
-        padding: 2%;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        font-family: 'Raleway', sans-serif;
-        h1{
-            @media (max-width:450px) {
-              font-size: 1.5rem;
-            }
-            font-size: 3vw;
-            font-weight: 800;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: flex-start;
+    padding: 2%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Raleway', sans-serif;
+    h1{
+        @media (max-width:450px) {
+            font-size: 1.5rem;
         }
-        p{
-            @media (max-width:450px) {
-              font-size: 1rem;
-            } 
-            line-height: 30px;
-            text-align: justify;
-            font-size: 1.2vw;
-            font-weight: 500;
-        }
+        font-size: 3vw;
+        font-weight: 800;
+    }
+    p{
+        @media (max-width:450px) {
+            font-size: 1rem;
+        } 
+        line-height: 30px;
+        text-align: justify;
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
 `
 function About({darkMode}) {
     useEffect(()=>{
         Aos.init({duration : 3000})
     },[])
   return (
-    <div>
+    <div className='about'>
         <First>
             <Card data-aos="fade-left">
-                <h1>ABOUT US</h1>
+            <AnimatedText
+                      type="words" // animate words or chars
+                      animation={{
+                          x: '200px',
+                          y: '-20px',
+                          scale: 1.1,
+                          ease: 'ease-in-out',
+                      }}
+                      animationType="float"
+                      interval={0.06}
+                      duration={0.8}
+                      tag="h1"
+                      className="animated-paragraph"
+                      includeWhiteSpaces
+                      threshold={0.1}
+                      rootMargin="20%"
+                  >
+                      ABOUT US
+        </AnimatedText>
             </Card>
         </First>
         <SecondSEction cl={darkMode ? '#fff' : '#000'}>
