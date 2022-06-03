@@ -87,7 +87,6 @@ function Footer({darkMode}) {
             <ul>
                 <li>SERVICES</li>
                 <li><Link to='/service'>Consulting Services</Link></li>
-                <li><Link to='/service'>IT Infrastructure Services</Link></li>
                 <li><Link to='/service'>Software Systems</Link></li>
                 <li><Link to='/service'>IT Infrastructure Services</Link></li>
                 <li><Link to='/service'>Devops</Link></li>

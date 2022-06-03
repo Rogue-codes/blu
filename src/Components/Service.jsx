@@ -4,7 +4,7 @@ import servbg from '../Assets/serv.jpeg'
 import serv from '../Assets/serv.jpg'
 import serv2 from '../Assets/serv2.jpg'
 import serv3 from '../Assets/serv3.jpg'
-import serv4 from '../Assets/serv4.jpg'
+import serv4 from '../Assets/devops.jpg'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -379,7 +379,7 @@ function Service({darkMode}) {
                 <List cl={darkMode ? 'white' : 'black'}>
                     <li><b>We Plan.</b> This phase helps define business value and requirements. Sample tools include Jira or Git to help track known issues and perform project management.</li>
                     <li><b>We Build.</b>  In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production. You use source code repositories or package repositories that also “package” infrastructure needed for product release. Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.</li>
-                    <li>Deploy. This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.</li>
+                    <li><b>We Deploy.</b> This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.</li>
                 </List>
 
                 
