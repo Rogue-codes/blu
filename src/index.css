@@ -45,9 +45,6 @@
   border: solid 1px #fff;
   border-radius: 5px;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.3vw;
-  color: #fff;
-  margin-top: 2%;
   text-decoration: none;
   transition: all .5s linear;
   padding: 1% 5%;
@@ -73,17 +70,19 @@
   }
   .caption h3{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 100%;
   }
   .caption p{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
-    margin-left: 10%;
+    text-align: center;
+    width: 100%;
   }
-  .caption button{
-    font-size: 1rem;
-    margin-left: 10%;
+  .caption a{
+    font-size: 1.2rem;
+    margin-left: 25%;
+    margin-top: 0%;
   }
 }
 .accd{

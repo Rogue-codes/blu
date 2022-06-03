@@ -88,7 +88,7 @@ const ThirdSection = styled.div`
 `
 const Banner = styled.div`
     @media (max-width:450px) {
-        width: 80%;
+        width: 95%;
         height: auto;
         padding: 4%;
         display: flex;
@@ -157,6 +157,10 @@ const Left = styled.div`
     }
 `
 const FourthSection = styled.div`
+    @media (max-width:450px) {
+        flex-direction: column;
+        height: auto;
+    }
     width: 100%;
     height: 60vh;
     display: flex;
@@ -165,6 +169,9 @@ const FourthSection = styled.div`
     padding: 2%;
 `
 const FourthLeft = styled.div`
+    @media (max-width:450px) {
+        width: 95%;
+    }
     width: 48%;
     height: auto;
     h1{
@@ -188,6 +195,9 @@ const FourthLeft = styled.div`
     }
 `
 const FourthRight = styled.div`
+    @media (max-width:450px) {
+        width: 90%;
+    }
     width: 48%;
     height: auto;
     h1{
@@ -212,7 +222,7 @@ const FourthRight = styled.div`
 `
 const FifthSection = styled.div`
     width: 100%;
-    height: auto;
+    border: 11px solid #000;
     background: linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${cld2});
     background-size: cover;
     -webkit-background-size:cover;
@@ -220,7 +230,11 @@ const FifthSection = styled.div`
     -o-background-size:cover;
     background-attachment: fixed;
     background-position: 10% 70%;
+    height: auto;
     h1{
+        @media (max-width:450px) {
+            font-size: 2rem;
+        }
         text-align: center;
         color: #fff;
         font-size: 3vw;
@@ -229,6 +243,9 @@ const FifthSection = styled.div`
     }
 `
 const ValuesContainer = styled.div`
+    @media (max-width:450px) {
+       flex-direction: column;
+    }
     width: 100%;
     height: 80vh;
     display: flex;
@@ -237,18 +254,29 @@ const ValuesContainer = styled.div`
     padding: 1%;
 `
 const Cards = styled.div`
+    @media (max-width:450px) {
+        width: 90%;
+        margin-bottom: 5%;
+    }
     width: 24%;
     height: 50vh;
     background: #067fbcde;
     padding: 1%;
     border-radius: 5px;
     h1{
+        @media (max-width:450px) {
+            font-size: 1.2rem;
+        }
         color: #fff;
         font-size: 3vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
     }
     p{
+        @media (max-width:450px) {
+            font-size: 1rem;
+            padding-left: 2%;
+        }
         font-family: 'Raleway', sans-serif;
         font-size: 1.4vw;
         color: #fff;

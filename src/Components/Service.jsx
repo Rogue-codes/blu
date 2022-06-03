@@ -287,6 +287,11 @@ const SecondSEction4 = styled.section`
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
         @media (max-width:450px) {
             width: 100%;
             margin-bottom: 10%;

@@ -110,6 +110,10 @@ const Links = styled.div`
     }
 `
 const Toggle = styled.div`
+    @media (max-width:480px) {
+        position: absolute;
+        left: 60%;
+    }
     width: 50px;
     height: 25px;
     border-radius: 20px;

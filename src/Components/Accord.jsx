@@ -12,7 +12,7 @@ function Accord() {
     Aos.init({duration : 1000})
   },[])
   return (
-<Accordion defaultActiveKey="0" flush className='accd' data-aos="fade-left">
+<Accordion defaultActiveKey="2" flush className='accd' data-aos="fade-left">
   <Accordion.Item eventKey="0" className='aic'>
     <Accordion.Header>Dedicated Team</Accordion.Header>
     <Accordion.Body className='bod'>

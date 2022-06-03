@@ -16,7 +16,8 @@ import { Link } from 'react-router-dom'
 const SecondSEction = styled.section`
     @media (max-width:450px) {
         flex-direction: column;
-        margin-top: 50%;
+        margin-top: 10%;
+        height: auto;
     }
     width: 100%;
     min-height: 100vh;
@@ -139,6 +140,9 @@ const ThirdSEction = styled.div`
     }  
 `
 const FourthSection = styled.section`
+        @media (max-width:450px) {
+            height: auto;
+        }
         width: 100%;
         margin-top: 2%;
         margin-bottom: 2%;
@@ -238,6 +242,7 @@ const FourthSection = styled.section`
 const FifthSection = styled.div`
     @media (max-width:450px) {
         flex-direction: column;
+        height: auto;
     }
     width: 100%;
     height: 70vh;
@@ -249,8 +254,8 @@ const FifthSection = styled.div`
     padding: 4%;
     .left{
         @media (max-width:450px) {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
         }
         width: 500px;
         height: 300px;
@@ -290,6 +295,7 @@ const FifthSection = styled.div`
         .contact{
             @media (max-width:450px) {
                 font-size: 1rem;
+                width: 45%;
             }
             width:35% ;
             padding: 2% 5%;
@@ -314,6 +320,10 @@ const FifthSection = styled.div`
     }
 `
 const SixthSection = styled.div`
+    @media (max-width:450px) {
+        height: auto;
+        padding: 2%;
+    }
     width: 100%;
     height: 70vh;
     background:  linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${logo2}) center fixed ;
@@ -328,23 +338,35 @@ const SixthSection = styled.div`
     margin-top: 2%;
 `
 const SixthCard = styled.div`
+    @media (max-width:450px) {
+        width: 90%;
+    }
     width: 60%;
     height: auto;
     border-radius: 12px;
     background: ${props => props.bg};
     padding: 2%;
     h1{
+        @media (max-width:450px) {
+            font-size: 1.5rem;
+        }
         color: #0680bcc2;
         font-size: 3vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
     }
     h2{
+        @media (max-width:450px) {
+            font-size: 1.2rem;
+        }
         font-size: 2vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
     }
     p{
+        @media (max-width:450px) {
+            font-size: 1rem;
+        }
         font-family: 'Raleway', sans-serif;
         font-size: 1.4vw;
     }
@@ -363,6 +385,10 @@ const Btn = styled.button`
     transition: all 0.5s linear;
     &:hover{
         background: #0680bcc2;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
         color: #fff;
     }
 `
@@ -384,7 +410,7 @@ function Home({darkMode}) {
                 </h1>
 
                 <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
-                <Btn bg={darkMode ? '#0680bcc2' : 'black'}>more</Btn>
+                <Btn bg={darkMode ? '#0680bcc2' : 'black'}><Link to='/about'>more</Link></Btn>
                 
             </div>
 

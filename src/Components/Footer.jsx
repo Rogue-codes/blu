@@ -4,6 +4,9 @@ import {BsFacebook,BsTwitter} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
 const Foot = styled.footer`
+    @media (max-width:450px) {
+        height: auto;
+    }
     width: 100%;
     height: 80Vh;
     border-top: 1px solid #f9eeee;
@@ -17,14 +20,25 @@ const Foot = styled.footer`
     background: ${props=>props.bg};
 `
 const Top = styled.div`
+    @media (max-width:450px) {
+        height: auto;
+        flex-wrap: wrap;
+    }
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content: space-between;
     ul{
+        @media (max-width:450px) {
+            width: 50%;
+        }
         color: #fff;
         list-style-type: none;
         li{
+            @media (max-width:450px) {
+                font-size: .7rem;
+                padding-top: 10%;
+            }
             padding-top: 5%;
             font-family: 'Lato', sans-serif;
             font-size: 1.5vw;
@@ -37,6 +51,9 @@ const Top = styled.div`
                 }
             }
           &:nth-child(1){
+            @media (max-width:450px) {
+                font-size: .8rem;
+            }
             font-weight: 500;
             font-family: 'Raleway', sans-serif;
             font-size: 2vw;
@@ -45,6 +62,9 @@ const Top = styled.div`
     }
 `
 const Bottom = styled.div`
+    @media (max-width:450px) {
+        padding-left: 5%;
+    }
     width: 100%;
     height: 20vh;
     border-top: 1px solid #fff;
