@@ -49,8 +49,9 @@ const Bottom = styled.div`
     height: 20vh;
     border-top: 1px solid #fff;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
     gap: 5%;
     .left{
         @media (max-width:450px) {
