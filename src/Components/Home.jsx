@@ -304,7 +304,7 @@ const FifthSection = styled.div`
             transition: all .5s linear;
             a{
                 text-decoration: none;
-                color: #000;
+                color: #fff;
             }
             &:hover{
                 background: #fff;
@@ -329,7 +329,7 @@ const SixthSection = styled.div`
 `
 const SixthCard = styled.div`
     width: 60%;
-    height: 90%;
+    height: auto;
     border-radius: 12px;
     background: #ffffffca;
     padding: 2%;
