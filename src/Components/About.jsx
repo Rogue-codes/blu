@@ -309,11 +309,11 @@ function About({darkMode}) {
         </ThirdSection>
 
         <FourthSection>
-            <FourthLeft>
+            <FourthLeft  data-aos="fade-right">
                 <h1>Mission</h1>
                 <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
             </FourthLeft>
-            <FourthRight>
+            <FourthRight  data-aos="fade-left">
                 <h1>Vision</h1>
                 <p>To be Africa’s largest cloud solution/ I.T Infrastructure company and enhance Prowess of digital Transformation across all businesses.</p>
             </FourthRight>
@@ -323,22 +323,26 @@ function About({darkMode}) {
             <br />
             <h1>OUR CORE VALUES</h1>
             <ValuesContainer>
-                <Cards>
+                <Cards data-aos="fade-up"
+     data-aos-duration="2000">
                     <h1>Service</h1>
                     <p>We Deliver quintessential I.T services to our customers.</p>
                 </Cards>
 
-                <Cards>
+                <Cards data-aos="fade-up"
+     data-aos-duration="2000">
                     <h1>Innovation</h1>
                     <p>At BluebirdCMAST, we have developed the skills to be innovative and creative in all our day-to-day work. We consistently create solutions that solves daily human challenges using technology.</p>
                 </Cards>
 
-                <Cards>
+                <Cards data-aos="fade-up"
+     data-aos-duration="2000">
                     <h1>Excellence</h1>
                     <p>We create service-oriented system driven by excellent performance.</p>
                 </Cards>
 
-                <Cards>
+                <Cards data-aos="fade-up"
+     data-aos-duration="2000">
                     <h1>Commitment</h1>
                     <p>We value positive customer experience and are committed to ensuring all our esteemed customers get ROI during their cloud migration journey .With our commitment high customer satisfaction is guaranteed.</p>
                 </Cards>

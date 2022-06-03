@@ -483,12 +483,13 @@ function Home({darkMode}) {
             />
         </FourthSection>
 
-        <FifthSection data-aos="fade-up"
-     data-aos-duration="3000">
-            <div className="left">
+        <FifthSection>
+            <div className="left" data-aos="fade-right"
+     data-aos-duration="1000">
                 <img src="/idea.webp" alt="" srcset="" />
             </div>
-            <div className="right">
+            <div className="right" data-aos="fade-left"
+     data-aos-duration="1000">
                 <h3>Want to know more?</h3>
                 <p>Speak to one of our technology professionals on how to achieve the desired results for your business.</p>
                 <button className='contact'><Link to='/contact'>Contact Us</Link></button>
@@ -496,7 +497,8 @@ function Home({darkMode}) {
         </FifthSection>
 
         <SixthSection>
-            <SixthCard bg={darkMode ? '#333' : '#fff'}>
+            <SixthCard data-aos="fade-up"
+     data-aos-duration="2000" bg={darkMode ? '#333' : '#fff'}>
                 <h1>Who We Are</h1>
                 <h2>Transforming The Face of IT Support</h2>
                 <p>We are a global <b>Cloud/Technology Support</b> organization providing innovative technology and business solutions to Enterprises institutions across continents.</p>
