@@ -251,7 +251,7 @@ const SecondSEction4 = styled.section`
             height: auto;
         }
         width: 50%;
-        height: 60vh;
+        height: auto;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -373,13 +373,13 @@ function Service({darkMode}) {
 
             <div className="left"  data-aos="fade-right">
                 <h1>
-                    IT Infrastructure Services
+                    DevOPs
                 </h1>
 
                 <List cl={darkMode ? 'white' : 'black'}>
-                    <li>Full integration and support of a wide range of I.T services such as computers, telecommunication, V-SAT and network equipment, Access Control, CCTV, Professional Audio Visual and Renewable Energy Systems.</li>
-                    <li>Supply, installation, support and maintenance of computer systems, Printers, Plotters, Laptops, UPS, Servers, digital cameras and all other PC peripherals.</li>
-                    <li>Installation and commissioning of WAN and LAN links using Microwave, Fibre cabling and twisted pair cable where applicable.</li>
+                    <li><b>We Plan.</b> This phase helps define business value and requirements. Sample tools include Jira or Git to help track known issues and perform project management.</li>
+                    <li><b>We Build.</b>  In this phase, you manage software builds and versions, and use automated tools to help compile and package code for future release to production. You use source code repositories or package repositories that also “package” infrastructure needed for product release. Sample tools include Docker, Ansible, Puppet, Chef, Gradle, Maven, or JFrog Artifactory.</li>
+                    <li>Deploy. This phase can include tools that help manage, coordinate, schedule, and automate product releases into production. Sample tools include Puppet, Chef, Ansible, Jenkins, Kubernetes, OpenShift, OpenStack, Docker, or Jira.</li>
                 </List>
 
                 
