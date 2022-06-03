@@ -307,7 +307,6 @@ const FifthSection = styled.div`
                 color: #fff;
             }
             &:hover{
-                background: #fff;
                 color:#0680bcc2;
                 border: 2px solid #0680bcc2;
             }
