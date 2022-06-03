@@ -22,7 +22,6 @@ const SecondSEction = styled.section`
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    background: #f4f4f4;
     gap: 5%;
     align-items: center;
     padding: 2%;
@@ -149,7 +148,6 @@ const FourthSection = styled.section`
         flex-direction: column;
         gap: 5%;
         align-items: center;
-        background: #f4f4f4;
         padding: 2%;
         .top{
             height: 30%;
@@ -242,7 +240,6 @@ const FifthSection = styled.div`
         flex-direction: column;
     }
     width: 100%;
-    background: #f4f4f4;
     height: 70vh;
     margin-top: 2%;
     display: flex;
@@ -335,7 +332,7 @@ const SixthCard = styled.div`
     width: 60%;
     height: auto;
     border-radius: 12px;
-    background: #ffffffca;
+    background: ${props => props.bg};
     padding: 2%;
     h1{
         color: #0680bcc2;
@@ -499,7 +496,7 @@ function Home({darkMode}) {
         </FifthSection>
 
         <SixthSection>
-            <SixthCard>
+            <SixthCard bg={darkMode ? '#333' : '#fff'}>
                 <h1>Who We Are</h1>
                 <h2>Transforming the Face of IT Support</h2>
                 <p>We are a global <b>Cloud/Technology Support</b> organization providing innovative technology and business solutions to Enterprises institutions across continents.</p>

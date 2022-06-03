@@ -75,7 +75,7 @@ function App() {
   })
 
   return (
-    <Container bg={darkMode ? '#333' : null} cl={darkMode ? '#fff' : null} className="App">
+    <Container bg={darkMode ? '#333' : '#f4f4f4'} cl={darkMode ? '#fff' : null} className="App">
       <Router>
         <Nav toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
         <Routes>
