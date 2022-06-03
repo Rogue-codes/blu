@@ -31,7 +31,7 @@ const SecondSEction = styled.section`
             width: 100%;
         }
         width: 50%;
-        height: 60vh;
+        height: auto;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
