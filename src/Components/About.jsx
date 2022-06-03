@@ -258,6 +258,7 @@ function About({darkMode}) {
     useEffect(()=>{
         Aos.init({duration : 3000})
     },[])
+    document.body.scrollTop = 0;
   return (
     <div className='about'>
         <First>

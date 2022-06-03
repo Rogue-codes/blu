@@ -10,6 +10,7 @@ import { useState } from "react";
 import styled from 'styled-components'
 import {IoMdArrowDropupCircle} from 'react-icons/io'
 import {IoLogoWhatsapp} from 'react-icons/io'
+import ScrollToTop from "./Components/ScrollToTop";
 
 const Container = styled.div`
     background: ${props => props.bg};
@@ -77,6 +78,7 @@ function App() {
   return (
     <Container bg={darkMode ? '#333' : '#f4f4f4'} cl={darkMode ? '#fff' : null} className="App">
       <Router>
+        <ScrollToTop/>
         <Nav toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
         <Routes>
           <Route path="/" element={<Home darkMode={darkMode} />}/>
