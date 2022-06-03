@@ -43,7 +43,7 @@ const Card = styled.div`
 `
 const SecondSEction = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     gap: 5%;

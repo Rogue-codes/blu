@@ -44,7 +44,7 @@ const Card = styled.div`
 `
 const SecondSEction = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     gap: 5%;
@@ -107,7 +107,7 @@ const SecondSEction = styled.section`
 `
 const SecondSEction2 = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     gap: 5%;
@@ -169,7 +169,7 @@ const SecondSEction2 = styled.section`
 `
 const SecondSEction3 = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     gap: 5%;
@@ -232,7 +232,7 @@ const SecondSEction3 = styled.section`
 `
 const SecondSEction4 = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     gap: 5%;
