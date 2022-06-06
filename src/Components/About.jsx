@@ -258,7 +258,7 @@ const Cards = styled.div`
         margin-bottom: 5%;
     }
     width: 24%;
-    height: 50vh;
+    height: 42vh;
     background: #067fbcde;
     padding: 1%;
     border-radius: 5px;
