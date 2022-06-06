@@ -162,7 +162,7 @@ const FourthSection = styled.div`
         height: auto;
     }
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
