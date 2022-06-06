@@ -10,7 +10,6 @@ const Foot = styled.footer`
     width: 100%;
     height: 80Vh;
     border-top: 1px solid #f9eeee;
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 5%;
@@ -79,7 +78,7 @@ const Bottom = styled.div`
         }
         color: white;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     .right{
         @media (max-width:450px) {

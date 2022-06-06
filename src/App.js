@@ -87,7 +87,7 @@ function App() {
           <Route path="/contact" element={<Contact darkMode={darkMode}/>}/>
         </Routes>
         <a href="#top">
-          <BT opa={scroll ? '1' : '0'}><IoMdArrowDropupCircle size='2rem' color='black'/></BT>
+          <BT opa={scroll ? '1' : '0'}><IoMdArrowDropupCircle size='2rem' color='white'/></BT>
         </a>
         <Whatsapp href="https://api.whatsapp.com/send?phone=2347019896845"><IoLogoWhatsapp color='green' size='2.5rem' /></Whatsapp>
         <Footer darkMode={darkMode} />
