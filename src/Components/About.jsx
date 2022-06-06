@@ -96,7 +96,7 @@ const Banner = styled.div`
         align-items: center;
         flex-direction: column;
     }
-    width: 50%;
+    width: 60%;
     height: auto;
     background: ${props => props.bg};
     padding: 2%;
@@ -114,7 +114,7 @@ const Banner = styled.div`
             font-size: 1rem;
             font-family: 'Raleway', sans-serif;
         }
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-family: 'Raleway', sans-serif;
     }
 `
@@ -142,9 +142,9 @@ const Left = styled.div`
         @media (max-width:450px) {
             font-size: 1.5rem;
         }
-        font-size: 3vw;
+        font-size: 2vw;
         font-weight: 800;
-        color: #067fbcfc;
+        color: #067fbc;
     }
     p{
         @media (max-width:450px) {
@@ -178,7 +178,7 @@ const FourthLeft = styled.div`
         @media (max-width:450px) {
             font-size: 1.5rem;
         }
-        font-size: 3vw;
+        font-size: 2vw;
         font-weight: 800;
         font-family: 'Raleway', sans-serif;
         color: #067fbcfc;
@@ -189,9 +189,9 @@ const FourthLeft = styled.div`
         } 
         line-height: 30px;
         text-align: justify;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-weight: 500;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
 `
 const FourthRight = styled.div`
@@ -204,7 +204,7 @@ const FourthRight = styled.div`
         @media (max-width:450px) {
             font-size: 1.5rem;
         }
-        font-size: 3vw;
+        font-size: 2vw;
         font-weight: 800;
         font-family: 'Raleway', sans-serif;
         color: #067fbcfc;
@@ -215,14 +215,13 @@ const FourthRight = styled.div`
         } 
         line-height: 30px;
         text-align: justify;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-weight: 500;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
 `
 const FifthSection = styled.div`
     width: 100%;
-    border: 11px solid #000;
     background: linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${cld2});
     background-size: cover;
     -webkit-background-size:cover;
@@ -237,7 +236,7 @@ const FifthSection = styled.div`
         }
         text-align: center;
         color: #fff;
-        font-size: 3vw;
+        font-size: 2vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
     }
@@ -268,7 +267,7 @@ const Cards = styled.div`
             font-size: 1.2rem;
         }
         color: #fff;
-        font-size: 3vw;
+        font-size: 2vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
     }
@@ -278,8 +277,9 @@ const Cards = styled.div`
             padding-left: 2%;
         }
         font-family: 'Raleway', sans-serif;
-        font-size: 1.4vw;
+        font-size: 1.3vw;
         color: #fff;
+        text-align: center;
     }
 `
 function About({darkMode}) {

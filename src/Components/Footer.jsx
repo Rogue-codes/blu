@@ -41,7 +41,7 @@ const Top = styled.div`
             }
             padding-top: 5%;
             font-family: 'Lato', sans-serif;
-            font-size: 1.5vw;
+            font-size: 1.2vw;
             a{
                 text-decoration: none;
                 color: #fff;
@@ -56,7 +56,7 @@ const Top = styled.div`
             }
             font-weight: 500;
             font-family: 'Raleway', sans-serif;
-            font-size: 2vw;
+            font-size: 1.5vw;
           }  
         }
     }
@@ -94,7 +94,7 @@ const Bottom = styled.div`
 `
 function Footer({darkMode}) {
   return (
-    <Foot bg={darkMode ? '#333' : "#0680bcc2"}>
+    <Foot bg={darkMode ? '#333' : "#067fbc"}>
         <Top>
             <ul>
                 <li>BluebirdCMAST</li>

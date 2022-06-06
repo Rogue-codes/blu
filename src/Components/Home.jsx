@@ -47,7 +47,7 @@ const SecondSEction = styled.section`
             @media (max-width:450px) {
                 font-size: 2rem;
             }
-            font-size: 3vw;
+            font-size: 2vw;
             font-weight: 800;
         }
         p{
@@ -130,7 +130,7 @@ const ThirdSEction = styled.div`
         cursor: pointer;
         p{
             font-family: 'Raleway', sans-serif;
-            font-size: 2vw;
+            font-size: 1.5vw;
         }
         ul li {
             font-family: 'Raleway', sans-serif;
@@ -161,7 +161,7 @@ const FourthSection = styled.section`
                     margin-top: 15%;
                 }
                 text-align: center;
-                font-size: 4vw;
+                font-size: 2vw;
             }
             p{
                 text-align: center;
@@ -280,15 +280,15 @@ const FifthSection = styled.div`
             @media (max-width:450px) {
                 font-size: 2rem;
             }
-            font-size: 4vw;
+            font-size: 2vw;
             font-weight: 900;
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
         p{
             @media (max-width:450px) {
                 font-size: 1.2rem;
             }
-            font-size: 2vw;
+            font-size: 1.5vw;
             font-weight: 500;
             font-family: 'Roboto Condensed', sans-serif;
         }
@@ -314,7 +314,7 @@ const FifthSection = styled.div`
             }
             &:hover{
                 color:#0680bcc2;
-                border: 2px solid #0680bcc2;
+                background: #000;
             }
         }
     }
@@ -351,7 +351,7 @@ const SixthCard = styled.div`
             font-size: 1.5rem;
         }
         color: #0680bcc2;
-        font-size: 3vw;
+        font-size: 2vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
     }
@@ -359,16 +359,16 @@ const SixthCard = styled.div`
         @media (max-width:450px) {
             font-size: 1.2rem;
         }
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-family: 'Raleway', sans-serif;
-        font-weight: 500;
+        font-weight: 900;
     }
     p{
         @media (max-width:450px) {
             font-size: 1rem;
         }
         font-family: 'Raleway', sans-serif;
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
 `
 const Btn = styled.button`

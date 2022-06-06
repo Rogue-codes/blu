@@ -89,7 +89,7 @@ function App() {
         <a href="#top">
           <BT opa={scroll ? '1' : '0'}><IoMdArrowDropupCircle size='2rem' color='black'/></BT>
         </a>
-        <Whatsapp href="https://api.whatsapp.com/send?phone=2347086793671"><IoLogoWhatsapp color='green' size='2.5rem' /></Whatsapp>
+        <Whatsapp href="https://api.whatsapp.com/send?phone=2347019896845"><IoLogoWhatsapp color='green' size='2.5rem' /></Whatsapp>
         <Footer darkMode={darkMode} />
       </Router>
       

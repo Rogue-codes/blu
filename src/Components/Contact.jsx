@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import cont from '../Assets/cont.webp'
 import emailjs from '@emailjs/browser';
-import {FaLocationArrow} from 'react-icons/fa'
-import {BsFillPhoneFill} from 'react-icons/bs'
 import {HiMail} from 'react-icons/hi'
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -221,8 +219,6 @@ function Contact({darkMode}) {
                 </h1>
 
                 <List cl={darkMode ? 'white' : 'black'}>
-                    <li> <span><FaLocationArrow/></span> 54 Alcon Road, Woji Port Harcourt, Rivers State</li>
-                    <li> <span><BsFillPhoneFill/></span>+234 8161554644</li>
                     <li> <span><HiMail/></span> support@bluebirdcmast.com</li>
                 </List>
 
