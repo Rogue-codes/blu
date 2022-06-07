@@ -7,6 +7,7 @@ import serv3 from '../Assets/serv3.jpg'
 import serv4 from '../Assets/devops.jpg'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import AnimatedText from 'react-animated-text-content';
 
 const First = styled.div`
     @media (max-width:450px) {
@@ -313,7 +314,25 @@ function Service({darkMode}) {
     <div>
         <First>
             <Card  data-aos="fade-left">
-                <h1>SERVICES</h1>
+            <AnimatedText
+                      type="words" // animate words or chars
+                      animation={{
+                          x: '200px',
+                          y: '-20px',
+                          scale: 1.1,
+                          ease: 'ease-in-out',
+                      }}
+                      animationType="float"
+                      interval={0.06}
+                      duration={0.8}
+                      tag="h1"
+                      className="animated-paragraph"
+                      includeWhiteSpaces
+                      threshold={0.1}
+                      rootMargin="20%"
+                  >
+                      SERVICES
+        </AnimatedText>
             </Card>
         </First>
 
