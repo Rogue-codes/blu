@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import bg1 from '../Assets/blu1.png'
-import bg2 from '../Assets/blu2.png'
+import bg2 from '../Assets/bgblu.jpg'
 import bg3 from '../Assets/blu3.webp'
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -20,6 +20,7 @@ function CarouselComponent() {
       src={bg1}
       alt="First slide"
     />
+    <div className="shadow"></div>
     <Carousel.Caption   data-aos="fade-left" className='caption'>
       <h3 className='text'>
         <AnimatedText
@@ -72,6 +73,7 @@ function CarouselComponent() {
       src={bg2}
       alt="Second slide"
     />
+    <div className="shadow"></div>
 
     <Carousel.Caption data-aos="fade-left" className='caption'>
       <h3>
@@ -125,6 +127,7 @@ function CarouselComponent() {
       src={bg3}
       alt="Third slide"
     />
+    <div className="shadow"></div>
 
     <Carousel.Caption data-aos="fade-left" className='caption'>
     <h3>

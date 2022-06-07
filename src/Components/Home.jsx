@@ -59,6 +59,13 @@ const SecondSEction = styled.section`
             font-size: 1.2vw;
             color: ${props=>[props.cl]};
             font-weight: 500;
+            .blu{
+                font-family: 'Dancing Script', cursive;
+                font-weight: 900;
+            }
+            .cmast{
+                font-family: 'Rubik', sans-serif;
+            }
         }
     }
 `
@@ -409,7 +416,7 @@ function Home({darkMode}) {
                 Mission Statement
                 </h1>
 
-                <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
+                <p><span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
                 <Btn bg={darkMode ? '#0680bcc2' : 'black'}><Link to='/about'>more</Link></Btn>
                 
             </div>
