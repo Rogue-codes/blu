@@ -40,7 +40,7 @@ const Top = styled.div`
             }
             padding-top: 5%;
             font-family: 'Lato', sans-serif;
-            font-size: 12px;
+            font-size: 14px;
             a{
                 text-decoration: none;
                 color: #fff;
@@ -55,7 +55,7 @@ const Top = styled.div`
             }
             font-weight: 500;
             font-family: 'Raleway', sans-serif;
-            font-size: 1vw;
+            font-size: 1.2vw;
           }  
         }
     }
