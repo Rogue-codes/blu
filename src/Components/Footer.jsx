@@ -8,7 +8,7 @@ const Foot = styled.footer`
         height: auto;
     }
     width: 100%;
-    height: 60Vh;
+    height: 50Vh;
     border-top: 1px solid #f9eeee;
     display: flex;
     flex-direction: column;
