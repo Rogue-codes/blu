@@ -318,7 +318,7 @@ function About({darkMode}) {
                     Goal Principle
                 </h1>
 
-                <p>Information Technology has advanced consistently since the birth of the analog computer, from filling rooms to the comfort of small easy to use devices that have populated the market across the world. Bluebird CMAST believes in this approach which technology has shown us, to provide advanced solutions that give comfort and ease to the clients but most especially addresses the problem with an accurate and efficient solution.</p>
+                <p>Information Technology has advanced consistently since the birth of the analog computer, from filling rooms to the comfort of small easy to use devices that have populated the market across the world. <span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> believes in this approach which technology has shown us, to provide advanced solutions that give comfort and ease to the clients but most especially addresses the problem with an accurate and efficient solution.</p>
 
                 
             </Left>
@@ -330,7 +330,7 @@ function About({darkMode}) {
             <Banner data-aos="fade-up"
      data-aos-duration="3000" bg={darkMode ? '#333' : '#fff'}>
                 <h1>WHO WE ARE</h1>
-                <p><b>BlueBird Cmast Nig</b>, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
+                <p><b><span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> Nig</b>, is known to perform creditably and to World standards. In our Design/Build jobs, we ensure a holistic, stress free, fixed price, and predetermined completion/target approach. We take responsibility for ALL our installations and always provide needed support and maintenance.</p>
                 <p>We redifine tech to help enterprise technology companies transform their technical support and services function into a strategic value creation engine for growth.</p>
                 <p>With our experienced team, we have been able to focus on our core solution areas and our commitment to our customers and partners remain our highest priority. </p>
 
@@ -340,7 +340,7 @@ function About({darkMode}) {
         <FourthSection>
             <FourthLeft  data-aos="fade-right">
                 <h1>Mission</h1>
-                <p>Bluebird CMAST Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
+                <p><span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> Nigeria Limited is a company which delivers tailored solutions to address business challenges. With a backbone of experienced staff, the company has since built for itself a solid reputation as the frontline Consulting Services, Portfolio Management, Information Technology and Information Management service provider.</p>
             </FourthLeft>
             <FourthRight  data-aos="fade-left">
                 <h1>Vision</h1>
@@ -361,7 +361,7 @@ function About({darkMode}) {
                 <Cards data-aos="fade-up"
      data-aos-duration="2000">
                     <h1>Innovation</h1>
-                    <p>At BluebirdCMAST, we have developed the skills to be innovative and creative in all our day-to-day work. We consistently create solutions that solves daily human challenges using technology.</p>
+                    <p>At <span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span>  we have developed the skills to be innovative and creative in all our day-to-day work. We consistently create solutions that solves daily human challenges using technology.</p>
                 </Cards>
 
                 <Cards data-aos="fade-up"

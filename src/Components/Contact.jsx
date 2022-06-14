@@ -238,7 +238,7 @@ function Contact({darkMode}) {
                 </h1>
 
                 <List cl={darkMode ? 'white' : 'black'}>
-                    <li> <span><HiMail/></span> support@bluebirdcmast.com</li>
+                    <li> <span><HiMail/></span> support@<span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> bluebirdcmast.com</li>
                 </List>
 
                 

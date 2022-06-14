@@ -96,7 +96,7 @@ function Footer({darkMode}) {
     <Foot bg={darkMode ? '#333' : "#067fbc"}>
         <Top>
             <ul>
-                <li>BluebirdCMAST</li>
+                <li><span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> </li>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About us</Link></li>
                 <li><Link to='/service'>Services</Link></li>
@@ -129,7 +129,7 @@ function Footer({darkMode}) {
             <hr />
         <Bottom>
         <div className="left">
-            &copy;  BluebirdCMAST 2022
+            &copy;  <span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span>  2022
         </div>
         <div className="right">
             <BsFacebook  size="1.5rem" color="#fff" cursor="pointer"/>

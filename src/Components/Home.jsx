@@ -59,13 +59,6 @@ const SecondSEction = styled.section`
             font-size: 1.2vw;
             color: ${props=>[props.cl]};
             font-weight: 500;
-            .blu{
-                font-family: 'Dancing Script', cursive;
-                font-weight: 900;
-            }
-            .cmast{
-                font-family: 'Rubik', sans-serif;
-            }
         }
     }
 `
@@ -276,6 +269,8 @@ const FifthSection = styled.div`
     .right{
         @media (max-width:450px) {
             width: 100%;
+            margin-top: 10%;
+            margin-bottom: 10%;
         }
         width: 50%;
         height: 80%;
@@ -534,7 +529,7 @@ function Home({darkMode}) {
                 <h1>Who We Are</h1>
                 <h2>Transforming The Face of IT Support</h2>
                 <p>We are a global <b>Cloud/Technology Support</b> organization providing innovative technology and business solutions to Enterprises institutions across continents.</p>
-                <p>With our business office in Portharcourt Nigeria, and an army of Highly intuitive I.T professionals and Cloud engineers with competencies across Microsoft Azure, AWS, GCP, consulting and software development, BluebirdCMAST is on a mission to support organizations and states with technologies and intellectual strength required to enable them surpass their stakeholders’ expectations.</p>
+                <p>With our business office in Portharcourt Nigeria, and an army of Highly intuitive I.T professionals and Cloud engineers with competencies across Microsoft Azure, AWS, GCP, consulting and software development, <span className='blu'><b>Bluebird</b></span><span className='cmast'>CMAST</span> is on a mission to support organizations and states with technologies and intellectual strength required to enable them surpass their stakeholders’ expectations.</p>
             </SixthCard>
         </SixthSection>
 
