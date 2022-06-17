@@ -26,7 +26,7 @@ const SecondSEction = styled.section`
     gap: 5%;
     align-items: center;
     padding: 2%;
-    margin-top: -10%;
+    margin-top: 2%;
     .left{
         @media (max-width:450px) {
             width: 100%;
@@ -327,7 +327,7 @@ const SixthSection = styled.div`
         padding: 2%;
     }
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background:  linear-gradient(90deg, #067fbc62 0%, #067fbc7a 32%, #067fbc48 100%),url(${logo2}) center fixed ;
     background-size: cover;
     -webkit-background-size:cover;
